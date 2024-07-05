@@ -2,10 +2,11 @@ import os
 import platform
 
 import json
-import requests
 import datetime
 
-from flask import Flask
+from flask import Flask, jsonify, request
+from flask_cors import CORS
+import requests
 
 def generate_and_play_wav(text, filename, speaker=1):
     host = 'localhost'
@@ -40,10 +41,13 @@ def generate_and_play_wav(text, filename, speaker=1):
         return os.path.join(os.getcwd(), filename)
 
 app = Flask(__name__)
+CORS(app)
+app.config["JSON_AS_ASCII"] = False
 
 @app.route("/render_voice", methods=["POST"])  #追加
 def render():
-    text = requests.form["text"]
+    json = request.get_json()
+    text = json["text"]
     
     pf = platform.system()
     if pf == "Windows":
@@ -53,7 +57,8 @@ def render():
     dt_now = datetime.datetime.now().strftime("%Y%m%d%H%M%S%f")
     
     filename = dt_now + ".wav"
-    return generate_and_play_wav(text, filename=filename)
+    return_data = {"fileUrl": generate_and_play_wav(text, filename=filename)}
+    return jsonify(return_data)
 
 if __name__ == '__main__':
     app.run()
