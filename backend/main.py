@@ -1,10 +1,13 @@
+import os
+
 import json
 import requests
 import simpleaudio as sa
 import io
 import wave
+import datetime
 
-def generate_and_play_wav(text, speaker=1):
+def generate_and_play_wav(text, filename, speaker=1):
     host = 'localhost'
     port = 50021
     params = (
@@ -36,9 +39,18 @@ def generate_and_play_wav(text, speaker=1):
             wave_obj = sa.WaveObject(audio_data, wave_read.getnchannels(), wave_read.getsampwidth(), wave_read.getframerate())
 
     # WAVファイル再生部分
+    if response2.status_code == 200:
+        os.chdir(os.path.dirname(os.path.abspath(__file__)))
+        os.chdir("temp/audio")
+        with open(filename, "wb") as fp:
+            fp.write(response2.content)
+        
     play_obj = wave_obj.play()
     play_obj.wait_done()  # 再生が完了するまで待つ
 
 if __name__ == '__main__':
+    dt_now = datetime.datetime.now().strftime("%Y%m%d%H%M%S%f")
+    
     text = '明日の天気は晴れと雪だよ'
-    generate_and_play_wav(text)
+    filename = dt_now + ".wav"
+    generate_and_play_wav(text, filename=filename)
