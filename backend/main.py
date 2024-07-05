@@ -1,11 +1,11 @@
 import os
+import platform
 
 import json
 import requests
-import simpleaudio as sa
-import io
-import wave
 import datetime
+
+from flask import Flask
 
 def generate_and_play_wav(text, filename, speaker=1):
     host = 'localhost'
@@ -31,26 +31,29 @@ def generate_and_play_wav(text, filename, speaker=1):
         data=json.dumps(response1.json())
     )
 
-    # バイナリデータをwaveオブジェクトとして読み込む
-    with io.BytesIO(response2.content) as audio_io:
-        with wave.open(audio_io, 'rb') as wave_read:
-            # simpleaudioで再生可能なオーディオオブジェクトを生成
-            audio_data = wave_read.readframes(wave_read.getnframes())
-            wave_obj = sa.WaveObject(audio_data, wave_read.getnchannels(), wave_read.getsampwidth(), wave_read.getframerate())
-
     # WAVファイル再生部分
     if response2.status_code == 200:
         os.chdir(os.path.dirname(os.path.abspath(__file__)))
         os.chdir("temp/audio")
         with open(filename, "wb") as fp:
             fp.write(response2.content)
-        
-    play_obj = wave_obj.play()
-    play_obj.wait_done()  # 再生が完了するまで待つ
+        return os.path.join(os.getcwd(), filename)
 
-if __name__ == '__main__':
+app = Flask(__name__)
+
+@app.route("/render_voice", methods=["POST"])  #追加
+def render():
+    text = requests.form["text"]
+    
+    pf = platform.system()
+    if pf == "Windows":
+        print("on Windows")
+    else:
+        print("not Windows")
     dt_now = datetime.datetime.now().strftime("%Y%m%d%H%M%S%f")
     
-    text = '明日の天気は晴れと雪だよ'
     filename = dt_now + ".wav"
-    generate_and_play_wav(text, filename=filename)
+    return generate_and_play_wav(text, filename=filename)
+
+if __name__ == '__main__':
+    app.run()
