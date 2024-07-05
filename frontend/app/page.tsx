@@ -4,6 +4,8 @@ import { useState } from "react";
 import { Input } from "@nextui-org/input";
 import { Button } from "@nextui-org/react";
 
+import BPMtimer from "@/components/BPMtimer";
+
 export default function Home() {
   const [text, setText] = useState("")
 
@@ -41,6 +43,8 @@ export default function Home() {
           />
           <Button type="submit">送信</Button>
         </form>
+        <Button>TEST</Button>
+        <BPMtimer></BPMtimer>
       </div>
     </section>
   );
