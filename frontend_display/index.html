@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pines UI</title>
+    <style>
+        [x-cloak] {
+            display: none
+        }
+    </style>
+    <!-- Include the Alpine library on your page -->
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <!-- Include the TailwindCSS library on your page -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex items-start justify-center h-full bg-gray-50">
+    <div class="flex items-center justify-center w-full max-w-full">
+        <h1>TEST</h1>
+        <div>
+            <button id="start" type="button" value="再生">再生</button>
+            <button id="stop" type="button" value="停止">停止</button>
+        </div>
+    </div>
+    <audio id="bgm"></audio>
+    <audio id="count"></audio>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"
+    integrity="sha512-xi/RZRIF/S0hJ+yJJYuZ5yk6/8pCiRlEXZzoguSMl+vk2i3m6UjUO/WcZ11blRL/O+rnj94JRGwt/CHbc9+6EA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/frontend_display/javascript/bpm.js"></script>
+
+</html>
