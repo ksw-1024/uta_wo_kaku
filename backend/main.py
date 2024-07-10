@@ -14,7 +14,12 @@ from pydub import AudioSegment
 import glob
 import wave
 
+import random
+import sys
+
 currentDir = os.path.dirname(os.path.abspath(__file__))
+
+jp = ["あ","い","う","え","お","か","き","く","け","こ","さ","し","す","せ","そ","た","ち","つ","て","と","な","に","ぬ","ね","の","は","ひ","ふ","へ","ほ","ま","み","む","め","も","や","ゆ","よ","ら","り","る","れ","ろ","わ","を","ん"]
 
 def generate_and_play_wav(text, filename, speaker=1):
     host = 'localhost'
@@ -51,18 +56,22 @@ def generate_and_play_wav(text, filename, speaker=1):
         os.chdir("temp/audio")
         with open(filename, "wb") as fp:
             fp.write(response2.content)
-        add_silence_to_audio(os.path.join(os.path.dirname(os.path.abspath(__file__)), "audio", "separates", filename), os.path.join(os.path.dirname(os.path.abspath(__file__)), "temp", "audio", filename), 400)
+        add_silence_to_audio(os.path.join(os.path.dirname(os.path.abspath(__file__)), "audio", "separates", filename), os.path.join(os.path.dirname(os.path.abspath(__file__)), "temp", "audio", filename))
         return os.path.join(os.path.dirname(os.path.abspath(__file__)), "audio", "separates", filename)
     
-def add_silence_to_audio(output_path, input_path, msec):
+def add_silence_to_audio(output_path, input_path):
     sourceAudio = AudioSegment.from_wav(input_path)
-    time = (msec - len(sourceAudio))
-    if(time > 0):
-        sourceAudio = sourceAudio[93:len(sourceAudio)]
-        silent = AudioSegment.silent(duration=(time + 93))
+    time = len(sourceAudio)
+    if (time > 0 and time <= 400):
+        sourceAudio = sourceAudio[93:time]
+        silent = AudioSegment.silent(duration=((400 - time) + 93))
+        c = sourceAudio + silent
+    elif (time <= 800):
+        sourceAudio = sourceAudio[93:time]
+        silent = AudioSegment.silent(duration=((800 - time) + 93))
         c = sourceAudio + silent
     else:
-        c = sourceAudio[93:493]
+        c = sourceAudio[93:893]
     c.export(output_path, format="wav")
     
 def join_audio(inputs, output):
@@ -77,6 +86,17 @@ def join_audio(inputs, output):
         fpw.writeframes(fp.readframes(fp.getnframes()))
         fp.close()
     fpw.close()
+    
+    Audio = AudioSegment.from_wav(output)
+    silent = AudioSegment.silent(duration=1600)
+    c = silent + Audio
+    c.export(output, format="wav")
+    
+def make_word(length,words):
+    word = ""
+    for i in range(length):
+        word += words[random.randint(0,len(words)-1)]
+    return word
     
 app = Flask(__name__)
 CORS(app)
@@ -119,6 +139,52 @@ def glue():
     if(os.path.isdir(os.path.join(currentDir, "temp", "audio"))):
         shutil.rmtree(os.path.join(currentDir, "temp", "audio"))
         os.mkdir(os.path.join(currentDir, "temp", "audio"))
+    
+    return_data = {"fileUrl": os.path.join(currentDir, "audio", filename)}
+    return jsonify(return_data)
+
+@app.route("/auto_onomatope", methods=["POST"])
+def auto_onomatope():
+    print("== オノマトペ自動生成モードを起動します ==")
+    json = request.get_json()
+    count = json["count"]
+    length = json["length"]
+    
+    for i in range(count):
+        word = make_word(length, jp)
+        print(str(i+1) + "番目に生成したワード : " + word)
+        print("ファイルの生成開始")
+        
+        dt_now = datetime.datetime.now().strftime("%Y%m%d%H%M%S%f")
+        filename = dt_now + ".wav"
+        print("セパレートファイル名 : " + filename)
+        
+        generate_and_play_wav(word, filename)
+        print("セパレートファイル生成完了")
+        print("次の作業に移行します")
+        
+    print("ファイルの結合を開始します")
+    
+    files = glob.glob(os.path.join(currentDir, "audio", "separates", "*"))
+    for file in files:
+        print(file)
+    print("ファイルリスト取得完了")
+    dt_now = datetime.datetime.now().strftime("%Y%m%d%H%M%S%f")
+    filename = dt_now + ".wav"
+    
+    join_audio(files, os.path.join(currentDir,"audio", filename))
+    print("結合完了 : 完成したファイル名 -> " + filename)
+    print("以上で動作を終了します")
+    
+    #Tempファイルの中身を削除
+    if(os.path.isdir(os.path.join(currentDir, "temp", "audio"))):
+        shutil.rmtree(os.path.join(currentDir, "temp", "audio"))
+        os.mkdir(os.path.join(currentDir, "temp", "audio"))
+        
+    #Sepatateファイルの中身を削除
+    if(os.path.isdir(os.path.join(currentDir, "audio", "separates"))):
+        shutil.rmtree(os.path.join(currentDir, "audio", "separates"))
+        os.mkdir(os.path.join(currentDir, "audio", "separates"))
     
     return_data = {"fileUrl": os.path.join(currentDir, "audio", filename)}
     return jsonify(return_data)
