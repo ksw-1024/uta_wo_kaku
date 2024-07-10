@@ -3,10 +3,11 @@
 import { useState } from "react";
 import { Input } from "@nextui-org/input";
 import { Button } from "@nextui-org/react";
-import { json } from "stream/consumers";
 
 export default function Home() {
   const [text, setText] = useState("")
+  const [count, setCount] = useState("")
+  const [length, setLength] = useState("")
 
   const handleSubmit_build = async (e) => {
     e.preventDefault();
@@ -48,6 +49,28 @@ export default function Home() {
     }
   }
 
+  const handleSubmit_auto = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch("http://127.0.0.1:5000/auto_onomatope", {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          count: Number(count),
+          length: Number(length)
+        }),
+      });
+      const jsonData = await response.json();
+
+      alert("成功しました");
+    } catch (err) {
+      alert("失敗しました")
+    }
+  }
+
   return (
     <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
       <div>
@@ -65,6 +88,25 @@ export default function Home() {
       <div className="mt-5">
         <form onSubmit={handleSubmit_glue}>
           <Button type="submit">くっつける</Button>
+        </form>
+      </div>
+      <div className="mt-5">
+        <form onSubmit={handleSubmit_auto}>
+          <Input
+            required
+            label="回数"
+            type="number"
+            value={count}
+            onChange={(e) => setCount(e.target.value)}
+          />
+          <Input
+            required
+            label="文字数"
+            type="number"
+            value={length}
+            onChange={(e) => setLength(e.target.value)}
+          />
+          <Button type="submit">送信</Button>
         </form>
       </div>
     </section>
