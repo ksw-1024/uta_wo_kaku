@@ -8,6 +8,8 @@ from flask import Flask, jsonify, request
 from flask_cors import CORS
 import requests
 
+from pydub import AudioSegment
+
 def generate_and_play_wav(text, filename, speaker=1):
     host = 'localhost'
     port = 50021
@@ -38,7 +40,18 @@ def generate_and_play_wav(text, filename, speaker=1):
         os.chdir("temp/audio")
         with open(filename, "wb") as fp:
             fp.write(response2.content)
+        add_silence_to_audio(os.path.join(os.path.dirname(os.path.abspath(__file__)), "audio/separates"), os.path.join(os.path.dirname))
         return os.path.join(os.getcwd(), filename)
+    
+def add_silence_to_audio(output_path, input_path, msec):
+    sourceAudio = AudioSegment.from_wav(input_path)
+    time = (msec - len(sourceAudio))
+    if(time>0):
+        silent = AudioSegment.silent(duration=time)
+        c = sourceAudio + silent
+    else:
+        c = sourceAudio[:5000]
+    c.export(output_path, format="wav")
 
 app = Flask(__name__)
 CORS(app)
