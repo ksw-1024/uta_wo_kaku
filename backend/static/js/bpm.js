@@ -8,12 +8,12 @@ const startButton = document.getElementById('start');
 const stopButton = document.getElementById('stop');
 
 var bgm = new Howl({
-    src: ["/frontend_display/audio/bgm.mp3"],
+    src: ["audio/bgm.mp3"],
     volume: 0.3
 });
 
 var count2 = new Howl({
-    src: ["/backend/audio/20240711012206620099.wav"],
+    src: ["audio/voice.wav"],
     loop: true
 });
 

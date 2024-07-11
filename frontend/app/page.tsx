@@ -12,7 +12,7 @@ export default function Home() {
   const handleSubmit_build = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://127.0.0.1:5000/render_voice", {
+      const response = await fetch("http://127.0.0.1:8888/render_voice", {
         method: "POST",
         headers: {
           Accept: "application/json",
@@ -33,7 +33,7 @@ export default function Home() {
   const handleSubmit_glue = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://127.0.0.1:5000/glue", {
+      const response = await fetch("http://127.0.0.1:8888/glue", {
         method: "POST",
         headers: {
           Accept: "application/json",
@@ -52,7 +52,7 @@ export default function Home() {
   const handleSubmit_auto = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://127.0.0.1:5000/auto_onomatope", {
+      const response = await fetch("http://127.0.0.1:8888/auto_onomatope", {
         method: "POST",
         headers: {
           Accept: "application/json",

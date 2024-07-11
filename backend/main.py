@@ -5,7 +5,7 @@ import json
 import datetime
 import shutil
 
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, render_template, send_from_directory, url_for
 from flask_cors import CORS
 import requests
 
@@ -15,7 +15,6 @@ import glob
 import wave
 
 import random
-import sys
 
 currentDir = os.path.dirname(os.path.abspath(__file__))
 
@@ -102,10 +101,27 @@ app = Flask(__name__)
 CORS(app)
 app.config["JSON_AS_ASCII"] = False
 
+@app.route("/")
+def display():
+    html = render_template("index.html")
+    return html
+
+@app.route("/audio/bgm.mp3")
+def play_bgm():
+    return send_from_directory("audio", "bgm.mp3")
+
+@app.route("/audio/voice.wav")
+def  voice_data():
+    with open(os.path.join(currentDir, "temp", "json", "filename.json")) as f:
+        d = json.load(f)
+    
+    latest_file = d["filename"]
+    return send_from_directory("audio", latest_file)
+
 @app.route("/render_voice", methods=["POST"])  #追加
 def render():
-    json = request.get_json()
-    text = json["text"]
+    voicetext = request.get_json()
+    text = voicetext["text"]
     
     pf = platform.system()
     if pf == "Windows":
@@ -146,9 +162,11 @@ def glue():
 @app.route("/auto_onomatope", methods=["POST"])
 def auto_onomatope():
     print("== オノマトペ自動生成モードを起動します ==")
-    json = request.get_json()
-    count = json["count"]
-    length = json["length"]
+    mode_data = request.get_json()
+    count = mode_data["count"]
+    length = mode_data["length"]
+    
+    toJson = {"filename": "", "word": {}}
     
     for i in range(count):
         word = make_word(length, jp)
@@ -158,6 +176,8 @@ def auto_onomatope():
         dt_now = datetime.datetime.now().strftime("%Y%m%d%H%M%S%f")
         filename = dt_now + ".wav"
         print("セパレートファイル名 : " + filename)
+        
+        toJson["word"][i] = word
         
         generate_and_play_wav(word, filename)
         print("セパレートファイル生成完了")
@@ -186,8 +206,12 @@ def auto_onomatope():
         shutil.rmtree(os.path.join(currentDir, "audio", "separates"))
         os.mkdir(os.path.join(currentDir, "audio", "separates"))
     
+    toJson["filename"] = filename
+    with open(os.path.join(currentDir, "temp", "json", "filename.json"), "w") as f:
+        json.dump(toJson, f, indent=2, ensure_ascii=False)
+    
     return_data = {"fileUrl": os.path.join(currentDir, "audio", filename)}
     return jsonify(return_data)
 
 if __name__ == '__main__':
-    app.run()
+    app.run(port=8888)
