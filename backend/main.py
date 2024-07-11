@@ -14,11 +14,27 @@ from pydub import AudioSegment
 import glob
 import wave
 
+import csv
 import random
+
+import re
 
 currentDir = os.path.dirname(os.path.abspath(__file__))
 
-jp = ["あ","い","う","え","お","か","き","く","け","こ","さ","し","す","せ","そ","た","ち","つ","て","と","な","に","ぬ","ね","の","は","ひ","ふ","へ","ほ","ま","み","む","め","も","や","ゆ","よ","ら","り","る","れ","ろ","わ","を","ん"]
+c1 = '[ウクスツヌフムユルグズヅブプヴ][ァィェォ]' #ウ段＋「ァ/ィ/ェ/ォ」
+c2 = '[イキシチニヒミリギジヂビピ][ャュェョ]' #イ段（「イ」を除く）＋「ャ/ュ/ェ/ョ」
+c3 = '[テデ][ィュ]' #「テ/デ」＋「ャ/ィ/ュ/ョ」
+c4 = '[ァ-ヴー]' #カタカナ１文字（長音含む）
+
+cond = '('+c1+'|'+c2+'|'+c3+'|'+c4+')'
+re_mora = re.compile(cond)
+
+def moraWakachi(kana_text):
+    return re_mora.findall(kana_text)
+
+with open(os.path.join(currentDir, "onomatope_list.csv")) as f:
+    reader = csv.reader(f)
+    onomatope_list = [row for row in reader]
 
 def generate_and_play_wav(text, filename, speaker=1):
     host = 'localhost'
@@ -40,7 +56,10 @@ def generate_and_play_wav(text, filename, speaker=1):
     query["speedScale"] = 1.6
     query["prePhonemeLength"] = 0
     query["pitchScale"] = 0.02
-
+    
+    phonemes = len(query["accent_phrases"][0]["moras"])
+    print("音素数 : " + str(phonemes))
+    
     # 合成された音声データを取得
     response2 = requests.post(
         f'http://{host}:{port}/synthesis',
@@ -61,41 +80,46 @@ def generate_and_play_wav(text, filename, speaker=1):
 def add_silence_to_audio(output_path, input_path):
     sourceAudio = AudioSegment.from_wav(input_path)
     time = len(sourceAudio)
-    if (time > 0 and time <= 400):
-        sourceAudio = sourceAudio[93:time]
-        silent = AudioSegment.silent(duration=((400 - time) + 93))
-        c = sourceAudio + silent
-    elif (time <= 800):
-        sourceAudio = sourceAudio[93:time]
-        silent = AudioSegment.silent(duration=((800 - time) + 93))
-        c = sourceAudio + silent
-    else:
-        c = sourceAudio[93:893]
-    c.export(output_path, format="wav")
+    if(os.path.isdir(os.path.join(currentDir, "audio", "separates")) == False):
+        os.mkdir(os.path.join(currentDir, "audio", "separates"))
+        
+    # if (time > 0 and time <= 400):
+    #     sourceAudio = sourceAudio[93:time]
+    #     silent = AudioSegment.silent(duration=((400 - time) + 93))
+    #     c = sourceAudio + silent
+    # elif (time <= 800):
+    #     sourceAudio = sourceAudio[93:time]
+    #     silent = AudioSegment.silent(duration=((800 - time) + 93))
+    #     c = sourceAudio + silent
+    # else:
+    #     c = sourceAudio[93:893]
+    
+    sourceAudio.export(output_path, format="wav")
     
 def join_audio(inputs, output):
-    fps = [wave.open(f, 'r') for f in inputs]
-    fpw = wave.open(output, 'w')
-
-    fpw.setnchannels(fps[0].getnchannels())
-    fpw.setsampwidth(fps[0].getsampwidth())
-    fpw.setframerate(fps[0].getframerate())
+    print(inputs)
+    l = len(inputs)
+    print(l)
+    i = 0
+    while (i < (l - 1)):
+        print(str(i+1) + "番目の処理を開始")
+        sound1 = AudioSegment.from_file(inputs[i])
+        sound2 = AudioSegment.from_file(inputs[i+1])
         
-    for fp in fps:
-        fpw.writeframes(fp.readframes(fp.getnframes()))
-        fp.close()
-    fpw.close()
+        silent_temp = AudioSegment.silent(duration=400)
+        sound1 = sound1 + silent_temp
+        
+        output_dir = inputs[i+1]
+        
+        output_temp = sound1.overlay(sound2, position=(390 + i*400))
+        output_temp.export(output_dir, format="wav")
+        
+        i = i + 1
     
-    Audio = AudioSegment.from_wav(output)
-    silent = AudioSegment.silent(duration=1600)
+    Audio = AudioSegment.from_wav(inputs[l-1])
+    silent = AudioSegment.silent(duration=1590)
     c = silent + Audio
     c.export(output, format="wav")
-    
-def make_word(length,words):
-    word = ""
-    for i in range(length):
-        word += words[random.randint(0,len(words)-1)]
-    return word
     
 app = Flask(__name__)
 CORS(app)
@@ -164,12 +188,11 @@ def auto_onomatope():
     print("== オノマトペ自動生成モードを起動します ==")
     mode_data = request.get_json()
     count = mode_data["count"]
-    length = mode_data["length"]
     
     toJson = {"filename": "", "word": {}}
     
     for i in range(count):
-        word = make_word(length, jp)
+        word = onomatope_list[random.randint(0, 276)][0]
         print(str(i+1) + "番目に生成したワード : " + word)
         print("ファイルの生成開始")
         

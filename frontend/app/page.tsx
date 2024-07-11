@@ -3,11 +3,11 @@
 import { useState } from "react";
 import { Input } from "@nextui-org/input";
 import { Button } from "@nextui-org/react";
+import Link from "next/link";
 
 export default function Home() {
   const [text, setText] = useState("")
   const [count, setCount] = useState("")
-  const [length, setLength] = useState("")
 
   const handleSubmit_build = async (e) => {
     e.preventDefault();
@@ -60,7 +60,6 @@ export default function Home() {
         },
         body: JSON.stringify({
           count: Number(count),
-          length: Number(length)
         }),
       });
       const jsonData = await response.json();
@@ -99,16 +98,10 @@ export default function Home() {
             value={count}
             onChange={(e) => setCount(e.target.value)}
           />
-          <Input
-            required
-            label="文字数"
-            type="number"
-            value={length}
-            onChange={(e) => setLength(e.target.value)}
-          />
           <Button type="submit">送信</Button>
         </form>
       </div>
+      <Link href={"http://localhost:8888"}>再生ページ</Link>
     </section>
   );
 }

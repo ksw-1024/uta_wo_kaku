@@ -14,7 +14,7 @@ var bgm = new Howl({
 
 var count2 = new Howl({
     src: ["audio/voice.wav"],
-    loop: true
+    loop: false
 });
 
 startButton.addEventListener('click', () => {
