@@ -19,6 +19,16 @@ from plugins import VoiceGenerater, Wakachigaki, JointWav
 
 currentDir = os.path.dirname(os.path.abspath(__file__))
 
+platform_info = "NoData"
+
+pf = platform.system()
+if pf == "Windows":
+    platform_info = "Windows"
+elif pf == "Darwin":
+    platform_info = "macOS"
+elif pf == "Linux":
+    platform_info = "Linux"
+
 with open(os.path.join(currentDir, "onomatope_list.csv"), encoding="utf-8") as f:
     reader = csv.reader(f)
     onomatope_list = [row for row in reader]
@@ -49,11 +59,6 @@ def render():
     voicetext = request.get_json()
     text = voicetext["text"]
     
-    pf = platform.system()
-    if pf == "Windows":
-        print("on Windows")
-    else:
-        print("not Windows")
     dt_now = datetime.datetime.now().strftime("%Y%m%d%H%M%S%f")
     
     filename = dt_now + ".wav"
@@ -62,11 +67,6 @@ def render():
 
 @app.route("/glue", methods=["POST"])
 def glue():
-    pf = platform.system()
-    if pf == "Windows":
-        print("on Windows")
-    else:
-        print("not Windows")
     dt_now = datetime.datetime.now().strftime("%Y%m%d%H%M%S%f")
     
     files = glob.glob(os.path.join(currentDir, "audio", "separates", "*"))
