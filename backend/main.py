@@ -21,6 +21,7 @@ from plugins import VoiceGenerater, Wakachigaki, JointWav, Database
 
 currentDir = os.path.dirname(os.path.abspath(__file__))
 
+#プラットフォームの情報取得
 platform_info = "NoData"
 
 pf = platform.system()
@@ -31,10 +32,12 @@ elif pf == "Darwin":
 elif pf == "Linux":
     platform_info = "Linux"
 
+#オノマトペリストを取得
 with open(os.path.join(currentDir, "onomatope_list.csv"), encoding="utf-8") as f:
     reader = csv.reader(f)
     onomatope_list = [row for row in reader]
     
+#ログの準備
 with open(os.path.join(currentDir, "setting", "log_config.json"), 'r') as f:
     log_conf = json.load(f)
 

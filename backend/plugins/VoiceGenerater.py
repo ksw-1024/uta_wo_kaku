@@ -52,7 +52,7 @@ def generate(text, filename, speaker=1):
     )
 
     if response2.status_code == 200:
-        Database.temp_data_push(filename, text)
+        Database.temp_data_push(filename, text, phonemes)
         
         with open(os.path.join(currentDir, "audio", "separates", filename), "wb") as fp:
             fp.write(response2.content)

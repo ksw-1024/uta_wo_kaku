@@ -21,19 +21,19 @@ def data_push(filename, sepatate_filename, word):
     
     conn.close()
     
-def temp_data_push(separate_filename, word):
+def temp_data_push(separate_filename: str, word: str, onnso: int):
     conn = sqlite3.connect(os.path.join(currentDir, "SQLite3", "AUDIO_DATA.db"))
     
     cur = conn.cursor()
     
-    cur.execute('CREATE TABLE IF NOT EXISTS temp_audio(id INTEGER PRIMARY KEY AUTOINCREMENT, time TIMESTAMP, filename STRING, word STRING)')
-    cur.execute('INSERT INTO temp_audio(time, filename, word) VALUES (CURRENT_TIMESTAMP, "{}", "{}")'.format(separate_filename, word))
+    cur.execute('CREATE TABLE IF NOT EXISTS temp_audio(id INTEGER PRIMARY KEY AUTOINCREMENT, time TIMESTAMP, filename STRING, word STRING, onnso INTEGER)')
+    cur.execute('INSERT INTO temp_audio(time, filename, word, onnso) VALUES (CURRENT_TIMESTAMP, "{}", "{}", {})'.format(separate_filename, word, onnso))
     
     conn.commit()
     
     conn.close()
     
-def delete_table(table_name):
+def delete_table(table_name: str):
     conn = sqlite3.connect(os.path.join(currentDir, "SQLite3","AUDIO_DATA.db"))
     
     cur = conn.cursor()  # カーソルを作成
@@ -43,7 +43,7 @@ def delete_table(table_name):
     conn.commit()
     conn.close()
     
-def get_info(table, category, key):
+def get_info(table: str, category: str, key: str):
     conn = sqlite3.connect(os.path.join(currentDir, "SQLite3","AUDIO_DATA.db"))
     cur = conn.cursor()
     
