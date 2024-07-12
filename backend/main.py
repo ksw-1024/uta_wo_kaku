@@ -16,8 +16,6 @@ import glob
 import csv
 import random
 
-import psutil
-
 #自分の関数読み出し
 
 from plugins import wakachigaki, voice_generater
@@ -68,25 +66,7 @@ def generate_and_play_wav(text, filename, speaker=1):
             fp.write(response2.content)
         add_silence_to_audio(os.path.join(os.path.dirname(os.path.abspath(__file__)), "audio", "separates", filename), os.path.join(os.path.dirname(os.path.abspath(__file__)), "temp", "audio", filename))
         return os.path.join(os.path.dirname(os.path.abspath(__file__)), "audio", "separates", filename)
-    
-def add_silence_to_audio(output_path, input_path):
-    sourceAudio = AudioSegment.from_wav(input_path)
-    time = len(sourceAudio)
-    if(os.path.isdir(os.path.join(currentDir, "audio", "separates")) == False):
-        os.mkdir(os.path.join(currentDir, "audio", "separates"))
-        
-    # if (time > 0 and time <= 400):
-    #     sourceAudio = sourceAudio[93:time]
-    #     silent = AudioSegment.silent(duration=((400 - time) + 93))
-    #     c = sourceAudio + silent
-    # elif (time <= 800):
-    #     sourceAudio = sourceAudio[93:time]
-    #     silent = AudioSegment.silent(duration=((800 - time) + 93))
-    #     c = sourceAudio + silent
-    # else:
-    #     c = sourceAudio[93:893]
-    
-    sourceAudio.export(output_path, format="wav")
+
     
 def join_audio(inputs, output):
     print(inputs)
