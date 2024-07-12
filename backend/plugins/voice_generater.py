@@ -47,4 +47,5 @@ def voice_generate(text, filename, speaker=1):
         os.chdir("audio/separates")
         with open(filename, "wb") as fp:
             fp.write(response2.content)
+            fp.close()
         return os.path.join(os.path.dirname(os.path.abspath(__file__)), "audio", "separates", filename)
