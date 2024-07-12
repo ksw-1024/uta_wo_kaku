@@ -97,8 +97,6 @@ def auto_onomatope():
     mode_data = request.get_json()
     count = mode_data["count"]
     
-    toJson = {"filename": "", "word": {}}
-    
     for i in range(count):
         word = onomatope_list[random.randint(0, 276)][0]
         logger.info("{0} generated word : {1}".format(str(i+1), word))
@@ -107,8 +105,6 @@ def auto_onomatope():
         dt_now = datetime.datetime.now().strftime("%Y%m%d%H%M%S%f")
         filename = dt_now + ".wav"
         logger.info("セパレートファイル名 : {}".format(filename))
-        
-        toJson["word"][i] = word
         
         VoiceGenerater.generate(word, filename)
         logger.info("セパレートファイル生成完了")
@@ -124,10 +120,6 @@ def auto_onomatope():
     JointWav.joint_audio(files, os.path.join(currentDir,"audio", filename))
     logger.info("結合完了 : 完成したファイル名 -> {}".format(filename))
     logger.info("以上で動作を終了します")
-    
-    toJson["filename"] = filename
-    with open(os.path.join(currentDir, "temp", "json", "filename.json"), "w", encoding="utf-8") as f:
-        json.dump(toJson, f, indent=2, ensure_ascii=False)
     
     return_data = {"fileUrl": os.path.join(currentDir, "audio", filename)}
     return jsonify(return_data)
