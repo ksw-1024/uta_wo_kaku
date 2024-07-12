@@ -56,10 +56,8 @@ def play_bgm():
 
 @app.route("/audio/voice.wav")
 def  voice_data():
-    with open(os.path.join(currentDir, "temp", "json", "filename.json")) as f:
-        d = json.load(f)
+    latest_file = Database.get_info("audio", "id", "1")[0][2]
     
-    latest_file = d["filename"]
     return send_from_directory("audio", latest_file)
 
 @app.route("/render_voice", methods=["POST"])  #追加

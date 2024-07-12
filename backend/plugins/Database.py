@@ -14,32 +14,44 @@ def data_push(filename, sepatate_filename, word):
     
     cur = conn.cursor()  # カーソルを作成
     
-    cur.execute('CREATE TABLE IF NOT EXISTS audio(id INTEGER PRIMARY KEY AUTOINCREMENT,time TIMESTAMP, filename STRING, separate_filename STRING, word STRING)')  # tableを作成する指示
+    cur.execute('CREATE TABLE IF NOT EXISTS audio(id INTEGER PRIMARY KEY AUTOINCREMENT, time TIMESTAMP, filename STRING, separate_filename STRING, word STRING)')
     cur.execute('INSERT INTO audio(time, filename, separate_filename, word) VALUES(CURRENT_TIMESTAMP, "{}", "{}", "{}")'.format(filename, sepatate_filename, word))
     
     conn.commit()
     
     conn.close()
     
-def delete_table():
+def temp_data_push(separate_filename, word):
+    conn = sqlite3.connect(os.path.join(currentDir, "SQLite3", "AUDIO_DATA.db"))
+    
+    cur = conn.cursor()
+    
+    cur.execute('CREATE TABLE IF NOT EXISTS temp_audio(id INTEGER PRIMARY KEY AUTOINCREMENT, time TIMESTAMP, filename STRING, word STRING)')
+    cur.execute('INSERT INTO temp_audio(time, filename, word) VALUES (CURRENT_TIMESTAMP, "{}", "{}")'.format(separate_filename, word))
+    
+    conn.commit()
+    
+    conn.close()
+    
+def delete_table(table_name):
     conn = sqlite3.connect(os.path.join(currentDir, "SQLite3","AUDIO_DATA.db"))
     
     cur = conn.cursor()  # カーソルを作成
-    cur.execute('CREATE TABLE IF NOT EXISTS audio(id INTEGER PRIMARY KEY AUTOINCREMENT,time TIMESTAMP, filename STRING, separate_filename STRING, word STRING)')
-    cur.execute('DROP TABLE audio')
+    cur.execute('CREATE TABLE IF NOT EXISTS {}(id INTEGER PRIMARY KEY AUTOINCREMENT,time TIMESTAMP, filename STRING, separate_filename STRING, word STRING)'.format(table_name))
+    cur.execute('DROP TABLE {}'.format(table_name))
     
     conn.commit()
     conn.close()
     
-def get_info(filename):
+def get_info(table, category, key):
     conn = sqlite3.connect(os.path.join(currentDir, "SQLite3","AUDIO_DATA.db"))
     cur = conn.cursor()
     
-    cur.execute('SELECT * FROM audio WHERE filename="{}"'.format(filename))
+    cur.execute('SELECT * FROM {} WHERE {}="{}"'.format(table, category, key))
     word_data = cur.fetchall()
     
     conn.close()
     return word_data
     
 if __name__ == '__main__':
-    delete_table()
+    delete_table("audio")

@@ -6,6 +6,8 @@ from pydub import AudioSegment
 from logging import getLogger, config
 import json
 
+from plugins import Database as DB
+
 currentDir = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), os.pardir))
 
 with open(os.path.join(currentDir, "setting", "log_config.json"), 'r') as f:
@@ -37,8 +39,18 @@ def joint_audio(inputs, output):
     c = silent + Audio
     c.export(output, format="wav")
     
+    #データベースへの登録
+    DB.delete_table("audio")
+    
+    for i in inputs:
+        fn = os.path.basename(i)
+        word = DB.get_info("temp_audio", "filename", fn)[0][3]
+        DB.data_push(os.path.basename(output), fn, word)
+    
     #Sepatateファイルの中身を削除
     if(os.path.isdir(os.path.join(currentDir, "audio", "separates"))):
+        DB.delete_table("temp_audio")
+        
         logger.info("ファイルの削除を実行します")
         shutil.rmtree(os.path.join(currentDir, "audio", "separates"))
         os.mkdir(os.path.join(currentDir, "audio", "separates"))

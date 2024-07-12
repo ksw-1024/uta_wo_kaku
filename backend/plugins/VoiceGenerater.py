@@ -5,6 +5,8 @@ import json
 
 from logging import getLogger, config
 
+from plugins import Database
+
 currentDir = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), os.pardir))
 
 with open(os.path.join(currentDir, "setting", "log_config.json"), 'r') as f:
@@ -50,6 +52,8 @@ def generate(text, filename, speaker=1):
     )
 
     if response2.status_code == 200:
+        Database.temp_data_push(filename, text)
+        
         with open(os.path.join(currentDir, "audio", "separates", filename), "wb") as fp:
             fp.write(response2.content)
 
