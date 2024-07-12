@@ -742,3 +742,171 @@
 2024-07-13 00:07:37,246 __main__:117 auto_onomatope [INFO]: ファイルの結合を開始します
 2024-07-13 00:07:37,290 __main__:125 auto_onomatope [INFO]: 結合完了 : 完成したファイル名 -> 20240713000737247829.wav
 2024-07-13 00:07:37,290 __main__:126 auto_onomatope [INFO]: 以上で動作を終了します
+2024-07-13 00:09:22,907 __main__:96 auto_onomatope [INFO]: == Activate onomatopoeia auto-generation mode ==
+2024-07-13 00:09:22,908 __main__:102 auto_onomatope [INFO]: 1 generated word : じろじろ
+2024-07-13 00:09:22,908 __main__:103 auto_onomatope [INFO]: Start to generate file
+2024-07-13 00:09:22,909 __main__:107 auto_onomatope [INFO]: セパレートファイル名 : 20240713000922909005.wav
+2024-07-13 00:09:23,421 __main__:110 auto_onomatope [INFO]: セパレートファイル生成完了
+2024-07-13 00:09:23,421 __main__:111 auto_onomatope [INFO]: 次の作業に移行します
+2024-07-13 00:09:23,421 __main__:102 auto_onomatope [INFO]: 2 generated word : ブルブル
+2024-07-13 00:09:23,421 __main__:103 auto_onomatope [INFO]: Start to generate file
+2024-07-13 00:09:23,421 __main__:107 auto_onomatope [INFO]: セパレートファイル名 : 20240713000923421654.wav
+2024-07-13 00:09:23,884 __main__:110 auto_onomatope [INFO]: セパレートファイル生成完了
+2024-07-13 00:09:23,884 __main__:111 auto_onomatope [INFO]: 次の作業に移行します
+2024-07-13 00:09:23,884 __main__:102 auto_onomatope [INFO]: 3 generated word : もこもこ
+2024-07-13 00:09:23,884 __main__:103 auto_onomatope [INFO]: Start to generate file
+2024-07-13 00:09:23,884 __main__:107 auto_onomatope [INFO]: セパレートファイル名 : 20240713000923884971.wav
+2024-07-13 00:09:24,360 __main__:110 auto_onomatope [INFO]: セパレートファイル生成完了
+2024-07-13 00:09:24,360 __main__:111 auto_onomatope [INFO]: 次の作業に移行します
+2024-07-13 00:09:24,360 __main__:102 auto_onomatope [INFO]: 4 generated word : ぴえん
+2024-07-13 00:09:24,360 __main__:103 auto_onomatope [INFO]: Start to generate file
+2024-07-13 00:09:24,360 __main__:107 auto_onomatope [INFO]: セパレートファイル名 : 20240713000924360621.wav
+2024-07-13 00:09:24,809 __main__:110 auto_onomatope [INFO]: セパレートファイル生成完了
+2024-07-13 00:09:24,810 __main__:111 auto_onomatope [INFO]: 次の作業に移行します
+2024-07-13 00:09:24,810 __main__:102 auto_onomatope [INFO]: 5 generated word : ごちゃごちゃ
+2024-07-13 00:09:24,810 __main__:103 auto_onomatope [INFO]: Start to generate file
+2024-07-13 00:09:24,810 __main__:107 auto_onomatope [INFO]: セパレートファイル名 : 20240713000924810797.wav
+2024-07-13 00:09:25,295 __main__:110 auto_onomatope [INFO]: セパレートファイル生成完了
+2024-07-13 00:09:25,295 __main__:111 auto_onomatope [INFO]: 次の作業に移行します
+2024-07-13 00:09:25,295 __main__:102 auto_onomatope [INFO]: 6 generated word : ルンルン
+2024-07-13 00:09:25,296 __main__:103 auto_onomatope [INFO]: Start to generate file
+2024-07-13 00:09:25,296 __main__:107 auto_onomatope [INFO]: セパレートファイル名 : 20240713000925296094.wav
+2024-07-13 00:09:25,754 __main__:110 auto_onomatope [INFO]: セパレートファイル生成完了
+2024-07-13 00:09:25,754 __main__:111 auto_onomatope [INFO]: 次の作業に移行します
+2024-07-13 00:09:25,755 __main__:102 auto_onomatope [INFO]: 7 generated word : ワクワク
+2024-07-13 00:09:25,755 __main__:103 auto_onomatope [INFO]: Start to generate file
+2024-07-13 00:09:25,755 __main__:107 auto_onomatope [INFO]: セパレートファイル名 : 20240713000925755626.wav
+2024-07-13 00:09:26,226 __main__:110 auto_onomatope [INFO]: セパレートファイル生成完了
+2024-07-13 00:09:26,226 __main__:111 auto_onomatope [INFO]: 次の作業に移行します
+2024-07-13 00:09:26,226 __main__:102 auto_onomatope [INFO]: 8 generated word : ペロペロ
+2024-07-13 00:09:26,226 __main__:103 auto_onomatope [INFO]: Start to generate file
+2024-07-13 00:09:26,226 __main__:107 auto_onomatope [INFO]: セパレートファイル名 : 20240713000926226893.wav
+2024-07-13 00:09:26,707 __main__:110 auto_onomatope [INFO]: セパレートファイル生成完了
+2024-07-13 00:09:26,707 __main__:111 auto_onomatope [INFO]: 次の作業に移行します
+2024-07-13 00:09:26,707 __main__:102 auto_onomatope [INFO]: 9 generated word : ガオー
+2024-07-13 00:09:26,707 __main__:103 auto_onomatope [INFO]: Start to generate file
+2024-07-13 00:09:26,707 __main__:107 auto_onomatope [INFO]: セパレートファイル名 : 20240713000926707825.wav
+2024-07-13 00:09:27,157 __main__:110 auto_onomatope [INFO]: セパレートファイル生成完了
+2024-07-13 00:09:27,157 __main__:111 auto_onomatope [INFO]: 次の作業に移行します
+2024-07-13 00:09:27,157 __main__:102 auto_onomatope [INFO]: 10 generated word : すっきり
+2024-07-13 00:09:27,157 __main__:103 auto_onomatope [INFO]: Start to generate file
+2024-07-13 00:09:27,157 __main__:107 auto_onomatope [INFO]: セパレートファイル名 : 20240713000927157701.wav
+2024-07-13 00:09:27,669 __main__:110 auto_onomatope [INFO]: セパレートファイル生成完了
+2024-07-13 00:09:27,669 __main__:111 auto_onomatope [INFO]: 次の作業に移行します
+2024-07-13 00:09:27,669 __main__:102 auto_onomatope [INFO]: 11 generated word : ブクブク
+2024-07-13 00:09:27,669 __main__:103 auto_onomatope [INFO]: Start to generate file
+2024-07-13 00:09:27,669 __main__:107 auto_onomatope [INFO]: セパレートファイル名 : 20240713000927669428.wav
+2024-07-13 00:09:28,158 __main__:110 auto_onomatope [INFO]: セパレートファイル生成完了
+2024-07-13 00:09:28,158 __main__:111 auto_onomatope [INFO]: 次の作業に移行します
+2024-07-13 00:09:28,158 __main__:102 auto_onomatope [INFO]: 12 generated word : カラカラ
+2024-07-13 00:09:28,158 __main__:103 auto_onomatope [INFO]: Start to generate file
+2024-07-13 00:09:28,158 __main__:107 auto_onomatope [INFO]: セパレートファイル名 : 20240713000928158460.wav
+2024-07-13 00:09:28,628 __main__:110 auto_onomatope [INFO]: セパレートファイル生成完了
+2024-07-13 00:09:28,628 __main__:111 auto_onomatope [INFO]: 次の作業に移行します
+2024-07-13 00:09:28,629 __main__:102 auto_onomatope [INFO]: 13 generated word : てきぱき
+2024-07-13 00:09:28,629 __main__:103 auto_onomatope [INFO]: Start to generate file
+2024-07-13 00:09:28,629 __main__:107 auto_onomatope [INFO]: セパレートファイル名 : 20240713000928629241.wav
+2024-07-13 00:09:29,111 __main__:110 auto_onomatope [INFO]: セパレートファイル生成完了
+2024-07-13 00:09:29,112 __main__:111 auto_onomatope [INFO]: 次の作業に移行します
+2024-07-13 00:09:29,112 __main__:102 auto_onomatope [INFO]: 14 generated word : ばっちり
+2024-07-13 00:09:29,112 __main__:103 auto_onomatope [INFO]: Start to generate file
+2024-07-13 00:09:29,112 __main__:107 auto_onomatope [INFO]: セパレートファイル名 : 20240713000929112240.wav
+2024-07-13 00:09:29,572 __main__:110 auto_onomatope [INFO]: セパレートファイル生成完了
+2024-07-13 00:09:29,572 __main__:111 auto_onomatope [INFO]: 次の作業に移行します
+2024-07-13 00:09:29,572 __main__:102 auto_onomatope [INFO]: 15 generated word : ルンルン
+2024-07-13 00:09:29,572 __main__:103 auto_onomatope [INFO]: Start to generate file
+2024-07-13 00:09:29,572 __main__:107 auto_onomatope [INFO]: セパレートファイル名 : 20240713000929572672.wav
+2024-07-13 00:09:30,071 __main__:110 auto_onomatope [INFO]: セパレートファイル生成完了
+2024-07-13 00:09:30,071 __main__:111 auto_onomatope [INFO]: 次の作業に移行します
+2024-07-13 00:09:30,071 __main__:102 auto_onomatope [INFO]: 16 generated word : ゴクゴク
+2024-07-13 00:09:30,071 __main__:103 auto_onomatope [INFO]: Start to generate file
+2024-07-13 00:09:30,071 __main__:107 auto_onomatope [INFO]: セパレートファイル名 : 20240713000930071674.wav
+2024-07-13 00:09:30,548 __main__:110 auto_onomatope [INFO]: セパレートファイル生成完了
+2024-07-13 00:09:30,548 __main__:111 auto_onomatope [INFO]: 次の作業に移行します
+2024-07-13 00:09:30,548 __main__:113 auto_onomatope [INFO]: ファイルの結合を開始します
+2024-07-13 00:09:30,571 __main__:121 auto_onomatope [INFO]: 結合完了 : 完成したファイル名 -> 20240713000930549822.wav
+2024-07-13 00:09:30,571 __main__:122 auto_onomatope [INFO]: 以上で動作を終了します
+2024-07-13 00:10:28,509 __main__:96 auto_onomatope [INFO]: == Activate onomatopoeia auto-generation mode ==
+2024-07-13 00:10:28,509 __main__:102 auto_onomatope [INFO]: 1 generated word : ポタポタ
+2024-07-13 00:10:28,510 __main__:103 auto_onomatope [INFO]: Start to generate file
+2024-07-13 00:10:28,510 __main__:107 auto_onomatope [INFO]: セパレートファイル名 : 20240713001028510224.wav
+2024-07-13 00:10:29,029 __main__:110 auto_onomatope [INFO]: セパレートファイル生成完了
+2024-07-13 00:10:29,029 __main__:111 auto_onomatope [INFO]: 次の作業に移行します
+2024-07-13 00:10:29,029 __main__:102 auto_onomatope [INFO]: 2 generated word : カンカン
+2024-07-13 00:10:29,029 __main__:103 auto_onomatope [INFO]: Start to generate file
+2024-07-13 00:10:29,029 __main__:107 auto_onomatope [INFO]: セパレートファイル名 : 20240713001029029407.wav
+2024-07-13 00:10:29,488 __main__:110 auto_onomatope [INFO]: セパレートファイル生成完了
+2024-07-13 00:10:29,489 __main__:111 auto_onomatope [INFO]: 次の作業に移行します
+2024-07-13 00:10:29,489 __main__:102 auto_onomatope [INFO]: 3 generated word : コンコン
+2024-07-13 00:10:29,489 __main__:103 auto_onomatope [INFO]: Start to generate file
+2024-07-13 00:10:29,489 __main__:107 auto_onomatope [INFO]: セパレートファイル名 : 20240713001029489529.wav
+2024-07-13 00:10:29,940 __main__:110 auto_onomatope [INFO]: セパレートファイル生成完了
+2024-07-13 00:10:29,940 __main__:111 auto_onomatope [INFO]: 次の作業に移行します
+2024-07-13 00:10:29,940 __main__:102 auto_onomatope [INFO]: 4 generated word : すくすく
+2024-07-13 00:10:29,940 __main__:103 auto_onomatope [INFO]: Start to generate file
+2024-07-13 00:10:29,940 __main__:107 auto_onomatope [INFO]: セパレートファイル名 : 20240713001029940596.wav
+2024-07-13 00:10:30,402 __main__:110 auto_onomatope [INFO]: セパレートファイル生成完了
+2024-07-13 00:10:30,402 __main__:111 auto_onomatope [INFO]: 次の作業に移行します
+2024-07-13 00:10:30,402 __main__:102 auto_onomatope [INFO]: 5 generated word : プカプカ
+2024-07-13 00:10:30,403 __main__:103 auto_onomatope [INFO]: Start to generate file
+2024-07-13 00:10:30,403 __main__:107 auto_onomatope [INFO]: セパレートファイル名 : 20240713001030403124.wav
+2024-07-13 00:10:30,879 __main__:110 auto_onomatope [INFO]: セパレートファイル生成完了
+2024-07-13 00:10:30,879 __main__:111 auto_onomatope [INFO]: 次の作業に移行します
+2024-07-13 00:10:30,879 __main__:102 auto_onomatope [INFO]: 6 generated word : ちらりと
+2024-07-13 00:10:30,879 __main__:103 auto_onomatope [INFO]: Start to generate file
+2024-07-13 00:10:30,879 __main__:107 auto_onomatope [INFO]: セパレートファイル名 : 20240713001030879941.wav
+2024-07-13 00:10:31,354 __main__:110 auto_onomatope [INFO]: セパレートファイル生成完了
+2024-07-13 00:10:31,354 __main__:111 auto_onomatope [INFO]: 次の作業に移行します
+2024-07-13 00:10:31,354 __main__:102 auto_onomatope [INFO]: 7 generated word : ぴくぴく
+2024-07-13 00:10:31,354 __main__:103 auto_onomatope [INFO]: Start to generate file
+2024-07-13 00:10:31,354 __main__:107 auto_onomatope [INFO]: セパレートファイル名 : 20240713001031354919.wav
+2024-07-13 00:10:31,830 __main__:110 auto_onomatope [INFO]: セパレートファイル生成完了
+2024-07-13 00:10:31,831 __main__:111 auto_onomatope [INFO]: 次の作業に移行します
+2024-07-13 00:10:31,831 __main__:102 auto_onomatope [INFO]: 8 generated word : ゲラゲラ
+2024-07-13 00:10:31,831 __main__:103 auto_onomatope [INFO]: Start to generate file
+2024-07-13 00:10:31,831 __main__:107 auto_onomatope [INFO]: セパレートファイル名 : 20240713001031831366.wav
+2024-07-13 00:10:32,290 __main__:110 auto_onomatope [INFO]: セパレートファイル生成完了
+2024-07-13 00:10:32,290 __main__:111 auto_onomatope [INFO]: 次の作業に移行します
+2024-07-13 00:10:32,290 __main__:102 auto_onomatope [INFO]: 9 generated word : ガヤガヤ
+2024-07-13 00:10:32,290 __main__:103 auto_onomatope [INFO]: Start to generate file
+2024-07-13 00:10:32,290 __main__:107 auto_onomatope [INFO]: セパレートファイル名 : 20240713001032290698.wav
+2024-07-13 00:10:32,769 __main__:110 auto_onomatope [INFO]: セパレートファイル生成完了
+2024-07-13 00:10:32,769 __main__:111 auto_onomatope [INFO]: 次の作業に移行します
+2024-07-13 00:10:32,769 __main__:102 auto_onomatope [INFO]: 10 generated word : こなごな
+2024-07-13 00:10:32,769 __main__:103 auto_onomatope [INFO]: Start to generate file
+2024-07-13 00:10:32,769 __main__:107 auto_onomatope [INFO]: セパレートファイル名 : 20240713001032769881.wav
+2024-07-13 00:10:33,228 __main__:110 auto_onomatope [INFO]: セパレートファイル生成完了
+2024-07-13 00:10:33,228 __main__:111 auto_onomatope [INFO]: 次の作業に移行します
+2024-07-13 00:10:33,228 __main__:102 auto_onomatope [INFO]: 11 generated word : スベスベ
+2024-07-13 00:10:33,228 __main__:103 auto_onomatope [INFO]: Start to generate file
+2024-07-13 00:10:33,228 __main__:107 auto_onomatope [INFO]: セパレートファイル名 : 20240713001033228723.wav
+2024-07-13 00:10:33,701 __main__:110 auto_onomatope [INFO]: セパレートファイル生成完了
+2024-07-13 00:10:33,701 __main__:111 auto_onomatope [INFO]: 次の作業に移行します
+2024-07-13 00:10:33,701 __main__:102 auto_onomatope [INFO]: 12 generated word : ちくちく
+2024-07-13 00:10:33,701 __main__:103 auto_onomatope [INFO]: Start to generate file
+2024-07-13 00:10:33,701 __main__:107 auto_onomatope [INFO]: セパレートファイル名 : 20240713001033701645.wav
+2024-07-13 00:10:34,155 __main__:110 auto_onomatope [INFO]: セパレートファイル生成完了
+2024-07-13 00:10:34,155 __main__:111 auto_onomatope [INFO]: 次の作業に移行します
+2024-07-13 00:10:34,155 __main__:102 auto_onomatope [INFO]: 13 generated word : おどおど
+2024-07-13 00:10:34,155 __main__:103 auto_onomatope [INFO]: Start to generate file
+2024-07-13 00:10:34,155 __main__:107 auto_onomatope [INFO]: セパレートファイル名 : 20240713001034155836.wav
+2024-07-13 00:10:34,605 __main__:110 auto_onomatope [INFO]: セパレートファイル生成完了
+2024-07-13 00:10:34,606 __main__:111 auto_onomatope [INFO]: 次の作業に移行します
+2024-07-13 00:10:34,606 __main__:102 auto_onomatope [INFO]: 14 generated word : ノロノロ
+2024-07-13 00:10:34,606 __main__:103 auto_onomatope [INFO]: Start to generate file
+2024-07-13 00:10:34,606 __main__:107 auto_onomatope [INFO]: セパレートファイル名 : 20240713001034606451.wav
+2024-07-13 00:10:35,058 __main__:110 auto_onomatope [INFO]: セパレートファイル生成完了
+2024-07-13 00:10:35,058 __main__:111 auto_onomatope [INFO]: 次の作業に移行します
+2024-07-13 00:10:35,059 __main__:102 auto_onomatope [INFO]: 15 generated word : はぁはぁ
+2024-07-13 00:10:35,059 __main__:103 auto_onomatope [INFO]: Start to generate file
+2024-07-13 00:10:35,059 __main__:107 auto_onomatope [INFO]: セパレートファイル名 : 20240713001035059139.wav
+2024-07-13 00:10:35,529 __main__:110 auto_onomatope [INFO]: セパレートファイル生成完了
+2024-07-13 00:10:35,529 __main__:111 auto_onomatope [INFO]: 次の作業に移行します
+2024-07-13 00:10:35,529 __main__:102 auto_onomatope [INFO]: 16 generated word : ムラムラ
+2024-07-13 00:10:35,529 __main__:103 auto_onomatope [INFO]: Start to generate file
+2024-07-13 00:10:35,529 __main__:107 auto_onomatope [INFO]: セパレートファイル名 : 20240713001035529850.wav
+2024-07-13 00:10:35,985 __main__:110 auto_onomatope [INFO]: セパレートファイル生成完了
+2024-07-13 00:10:35,985 __main__:111 auto_onomatope [INFO]: 次の作業に移行します
+2024-07-13 00:10:35,986 __main__:113 auto_onomatope [INFO]: ファイルの結合を開始します
+2024-07-13 00:10:36,006 __main__:121 auto_onomatope [INFO]: 結合完了 : 完成したファイル名 -> 20240713001035986323.wav
+2024-07-13 00:10:36,006 __main__:122 auto_onomatope [INFO]: 以上で動作を終了します

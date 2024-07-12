@@ -38,7 +38,7 @@ def generate(text, filename, speaker=1):
     query = response1.json()
     query["speedScale"] = 1.6
     query["prePhonemeLength"] = 0
-    query["pitchScale"] = 0.02
+    query["pitchScale"] = 0.06
     
     phonemes = len(query["accent_phrases"][0]["moras"])
     logger.info("音素数 : {}".format(str(phonemes)))
