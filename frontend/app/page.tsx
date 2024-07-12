@@ -6,8 +6,8 @@ import { Button } from "@nextui-org/react";
 import Link from "next/link";
 
 export default function Home() {
-  const [text, setText] = useState("")
-  const [count, setCount] = useState("")
+  const [text, setText] = useState("");
+  const [count, setCount] = useState("");
 
   const handleSubmit_build = async (e) => {
     e.preventDefault();
@@ -16,7 +16,7 @@ export default function Home() {
         method: "POST",
         headers: {
           Accept: "application/json",
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({
           text: text,
@@ -26,9 +26,9 @@ export default function Home() {
 
       alert("テキストを送信しました");
     } catch (err) {
-      alert("テキストの送信に失敗しました")
+      alert("テキストの送信に失敗しました");
     }
-  }
+  };
 
   const handleSubmit_glue = async (e) => {
     e.preventDefault();
@@ -37,17 +37,18 @@ export default function Home() {
         method: "POST",
         headers: {
           Accept: "application/json",
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
         },
       });
       const jsonData = await response.json();
-      console.log(jsonData)
 
-      alert("くっつけに成功しました")
+      console.log(jsonData);
+
+      alert("くっつけに成功しました");
     } catch (err) {
-      alert("くっつけに失敗しました")
+      alert("くっつけに失敗しました");
     }
-  }
+  };
 
   const handleSubmit_auto = async (e) => {
     e.preventDefault();
@@ -56,7 +57,7 @@ export default function Home() {
         method: "POST",
         headers: {
           Accept: "application/json",
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({
           count: Number(count),
@@ -66,9 +67,9 @@ export default function Home() {
 
       alert("成功しました");
     } catch (err) {
-      alert("失敗しました")
+      alert("失敗しました");
     }
-  }
+  };
 
   return (
     <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">

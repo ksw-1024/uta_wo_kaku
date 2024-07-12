@@ -95,7 +95,7 @@ def glue():
 
 @app.route("/auto_onomatope", methods=["POST"])
 def auto_onomatope():
-    logger.info("== オノマトペ自動生成モードを起動します ==")
+    logger.info("== Activate onomatopoeia auto-generation mode ==")
     mode_data = request.get_json()
     count = mode_data["count"]
     
