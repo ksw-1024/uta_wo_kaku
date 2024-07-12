@@ -12,27 +12,17 @@ import requests
 from pydub import AudioSegment
 
 import glob
-import wave
 
 import csv
 import random
 
-import re
+#自分の関数読み出し
+
+from plugins import wakachigaki, voice_generater
 
 currentDir = os.path.dirname(os.path.abspath(__file__))
 
-c1 = '[ウクスツヌフムユルグズヅブプヴ][ァィェォ]' #ウ段＋「ァ/ィ/ェ/ォ」
-c2 = '[イキシチニヒミリギジヂビピ][ャュェョ]' #イ段（「イ」を除く）＋「ャ/ュ/ェ/ョ」
-c3 = '[テデ][ィュ]' #「テ/デ」＋「ャ/ィ/ュ/ョ」
-c4 = '[ァ-ヴー]' #カタカナ１文字（長音含む）
-
-cond = '('+c1+'|'+c2+'|'+c3+'|'+c4+')'
-re_mora = re.compile(cond)
-
-def moraWakachi(kana_text):
-    return re_mora.findall(kana_text)
-
-with open(os.path.join(currentDir, "onomatope_list.csv")) as f:
+with open(os.path.join(currentDir, "onomatope_list.csv"), encoding="utf-8") as f:
     reader = csv.reader(f)
     onomatope_list = [row for row in reader]
 
@@ -202,7 +192,7 @@ def auto_onomatope():
         
         toJson["word"][i] = word
         
-        generate_and_play_wav(word, filename)
+        voice_generater.voice_generate(word, filename)
         print("セパレートファイル生成完了")
         print("次の作業に移行します")
         
@@ -218,11 +208,6 @@ def auto_onomatope():
     join_audio(files, os.path.join(currentDir,"audio", filename))
     print("結合完了 : 完成したファイル名 -> " + filename)
     print("以上で動作を終了します")
-    
-    #Tempファイルの中身を削除
-    if(os.path.isdir(os.path.join(currentDir, "temp", "audio"))):
-        shutil.rmtree(os.path.join(currentDir, "temp", "audio"))
-        os.mkdir(os.path.join(currentDir, "temp", "audio"))
         
     #Sepatateファイルの中身を削除
     if(os.path.isdir(os.path.join(currentDir, "audio", "separates"))):
