@@ -5,7 +5,7 @@ import json
 
 currentDir = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), os.pardir))
 
-def voice_generate(text, filename, speaker=1):
+def generate(text, filename, speaker=1):
     
     if(os.path.isdir(os.path.join(currentDir, "audio", "separates")) == False):
         os.mkdir(os.path.join(currentDir, "audio", "separates"))
