@@ -3,15 +3,22 @@ import shutil
 
 from pydub import AudioSegment
 
+from logging import getLogger, config
+import json
+
 currentDir = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), os.pardir))
 
+with open(os.path.join(currentDir, "setting", "log_config.json"), 'r') as f:
+    log_conf = json.load(f)
+
+config.dictConfig(log_conf)
+logger = getLogger(__name__)
+
 def joint_audio(inputs, output):
-    print(inputs)
     l = len(inputs)
-    print(l)
     i = 0
     while (i < (l - 1)):
-        print(str(i+1) + "番目の処理を開始")
+        logger.info("{}番目の処理を開始".format(str(i+1)))
         sound1 = AudioSegment.from_file(inputs[i])
         sound2 = AudioSegment.from_file(inputs[i+1])
         
@@ -32,7 +39,6 @@ def joint_audio(inputs, output):
     
     #Sepatateファイルの中身を削除
     if(os.path.isdir(os.path.join(currentDir, "audio", "separates"))):
-        print("ファイルの削除を実行します")
+        logger.info("ファイルの削除を実行します")
         shutil.rmtree(os.path.join(currentDir, "audio", "separates"))
-        print("ディレクトリの復元を実行します")
         os.mkdir(os.path.join(currentDir, "audio", "separates"))

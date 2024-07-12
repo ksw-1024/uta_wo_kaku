@@ -3,7 +3,15 @@ import os
 import requests
 import json
 
+from logging import getLogger, config
+
 currentDir = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), os.pardir))
+
+with open(os.path.join(currentDir, "setting", "log_config.json"), 'r') as f:
+    log_conf = json.load(f)
+
+config.dictConfig(log_conf)
+logger = getLogger(__name__)
 
 def generate(text, filename, speaker=1):
     
@@ -31,7 +39,7 @@ def generate(text, filename, speaker=1):
     query["pitchScale"] = 0.02
     
     phonemes = len(query["accent_phrases"][0]["moras"])
-    print("音素数 : " + str(phonemes))
+    logger.info("音素数 : {}".format(str(phonemes)))
     
     # 合成された音声データを取得
     response2 = requests.post(

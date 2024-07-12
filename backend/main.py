@@ -13,6 +13,8 @@ import glob
 import csv
 import random
 
+from logging import getLogger, config
+
 #自分の関数読み出し
 
 from plugins import VoiceGenerater, Wakachigaki, JointWav
@@ -32,6 +34,12 @@ elif pf == "Linux":
 with open(os.path.join(currentDir, "onomatope_list.csv"), encoding="utf-8") as f:
     reader = csv.reader(f)
     onomatope_list = [row for row in reader]
+    
+with open(os.path.join(currentDir, "setting", "log_config.json"), 'r') as f:
+    log_conf = json.load(f)
+
+config.dictConfig(log_conf)
+logger = getLogger(__name__)
     
 app = Flask(__name__)
 CORS(app)
@@ -87,7 +95,7 @@ def glue():
 
 @app.route("/auto_onomatope", methods=["POST"])
 def auto_onomatope():
-    print("== オノマトペ自動生成モードを起動します ==")
+    logger.info("== オノマトペ自動生成モードを起動します ==")
     mode_data = request.get_json()
     count = mode_data["count"]
     
@@ -95,31 +103,29 @@ def auto_onomatope():
     
     for i in range(count):
         word = onomatope_list[random.randint(0, 276)][0]
-        print(str(i+1) + "番目に生成したワード : " + word)
-        print("ファイルの生成開始")
+        logger.info("{0}番目に生成したワード : {1}".format(str(i+1), word))
+        logger.info("ファイルの生成開始")
         
         dt_now = datetime.datetime.now().strftime("%Y%m%d%H%M%S%f")
         filename = dt_now + ".wav"
-        print("セパレートファイル名 : " + filename)
+        logger.info("セパレートファイル名 : {}".format(filename))
         
         toJson["word"][i] = word
         
         VoiceGenerater.generate(word, filename)
-        print("セパレートファイル生成完了")
-        print("次の作業に移行します")
+        logger.info("セパレートファイル生成完了")
+        logger.info("次の作業に移行します")
         
-    print("ファイルの結合を開始します")
+    logger.info("ファイルの結合を開始します")
     
     files = glob.glob(os.path.join(currentDir, "audio", "separates", "*"))
-    for file in files:
-        print(file)
-    print("ファイルリスト取得完了")
+
     dt_now = datetime.datetime.now().strftime("%Y%m%d%H%M%S%f")
     filename = dt_now + ".wav"
     
     JointWav.joint_audio(files, os.path.join(currentDir,"audio", filename))
-    print("結合完了 : 完成したファイル名 -> " + filename)
-    print("以上で動作を終了します")
+    logger.info("結合完了 : 完成したファイル名 -> {}".format(filename))
+    logger.info("以上で動作を終了します")
     
     toJson["filename"] = filename
     with open(os.path.join(currentDir, "temp", "json", "filename.json"), "w", encoding="utf-8") as f:
