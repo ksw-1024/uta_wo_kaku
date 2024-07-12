@@ -17,7 +17,7 @@ def data_push(filename, sepatate_filename, word):
     cur.execute('CREATE TABLE IF NOT EXISTS audio(id INTEGER PRIMARY KEY AUTOINCREMENT,time TIMESTAMP, filename STRING, separate_filename STRING, word STRING)')  # tableを作成する指示
     cur.execute('INSERT INTO audio(time, filename, separate_filename, word) VALUES(CURRENT_TIMESTAMP, "{}", "{}", "{}")'.format(filename, sepatate_filename, word))
     
-    conn.commit()  # commitした時点でDBファイルが更新されます
+    conn.commit()
     
     conn.close()
     

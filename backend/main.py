@@ -17,7 +17,7 @@ from logging import getLogger, config
 
 #自分の関数読み出し
 
-from plugins import VoiceGenerater, Wakachigaki, JointWav
+from plugins import VoiceGenerater, Wakachigaki, JointWav, Database
 
 currentDir = os.path.dirname(os.path.abspath(__file__))
 
@@ -103,8 +103,8 @@ def auto_onomatope():
     
     for i in range(count):
         word = onomatope_list[random.randint(0, 276)][0]
-        logger.info("{0}番目に生成したワード : {1}".format(str(i+1), word))
-        logger.info("ファイルの生成開始")
+        logger.info("{0} generated word : {1}".format(str(i+1), word))
+        logger.info("Start to generate file")
         
         dt_now = datetime.datetime.now().strftime("%Y%m%d%H%M%S%f")
         filename = dt_now + ".wav"
