@@ -16,6 +16,8 @@ import glob
 import csv
 import random
 
+import psutil
+
 #自分の関数読み出し
 
 from plugins import wakachigaki, voice_generater
@@ -211,7 +213,9 @@ def auto_onomatope():
         
     #Sepatateファイルの中身を削除
     if(os.path.isdir(os.path.join(currentDir, "audio", "separates"))):
+        print("ファイルの削除を実行します")
         shutil.rmtree(os.path.join(currentDir, "audio", "separates"))
+        print("ディレクトリの復元を実行します")
         os.mkdir(os.path.join(currentDir, "audio", "separates"))
     
     toJson["filename"] = filename

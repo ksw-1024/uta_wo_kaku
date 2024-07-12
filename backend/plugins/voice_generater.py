@@ -41,11 +41,8 @@ def voice_generate(text, filename, speaker=1):
         data=json.dumps(query)
     )
 
-    # WAVファイル再生部分
     if response2.status_code == 200:
-        os.chdir(currentDir)
-        os.chdir("audio/separates")
-        with open(filename, "wb") as fp:
+        with open(os.path.join(currentDir, "audio", "separates", filename), "wb") as fp:
             fp.write(response2.content)
-            fp.close()
+
         return os.path.join(os.path.dirname(os.path.abspath(__file__)), "audio", "separates", filename)
