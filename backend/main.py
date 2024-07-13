@@ -82,10 +82,7 @@ def render():
 def glue():
     dt_now = datetime.datetime.now().strftime("%Y%m%d%H%M%S%f")
     
-    files = glob.glob(os.path.join(currentDir, "audio", "separates", "*"))
-    for file in files:
-        print(file)
-    
+    files = Database.get_info_column("filepath", "temp_audio")
     filename = dt_now + ".wav"
     
     JointWav.joint_audio(files, os.path.join(currentDir,"audio", filename))

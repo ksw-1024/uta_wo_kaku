@@ -66,7 +66,7 @@ def joint_audio(inputs, output):
     
     #Sepatateファイルの中身を削除
     if(os.path.isdir(os.path.join(currentDir, "audio", "separates"))):
-        #DB.delete_table("temp_audio")
+        DB.delete_table("temp_audio")
         
         logger.info("ファイルの削除を実行します")
         shutil.rmtree(os.path.join(currentDir, "audio", "separates"))
