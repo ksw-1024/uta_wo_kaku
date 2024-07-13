@@ -19,23 +19,39 @@ logger = getLogger(__name__)
 def joint_audio(inputs, output):
     l = len(inputs)
     i = 0
+    done_time = 0
     while (i < (l - 1)):
         logger.info("{}番目の処理を開始".format(str(i+1)))
-        sound1 = AudioSegment.from_file(inputs[i])
-        sound2 = AudioSegment.from_file(inputs[i+1])
+        onnso = DB.get_info_row("temp_audio", "filename", os.path.basename(inputs[i][0]))[0][5]
         
-        silent_temp = AudioSegment.silent(duration=400)
-        sound1 = sound1 + silent_temp
+        sound1 = AudioSegment.from_file(inputs[i][0])
+        sound2 = AudioSegment.from_file(inputs[i+1][0])
         
-        output_dir = inputs[i+1]
+        if (onnso <= 4):
+            silent_temp = AudioSegment.silent(duration=400)
+            sound1 = sound1 + silent_temp
         
-        output_temp = sound1.overlay(sound2, position=(390 + i*400))
-        output_temp.export(output_dir, format="wav")
+            output_dir = inputs[i+1][0]
+        
+            output_temp = sound1.overlay(sound2, position=(400 + done_time))
+            output_temp.export(output_dir, format="wav")
+            
+            done_time = done_time + 400
+        else:
+            silent_temp = AudioSegment.silent(duration=800)
+            sound1 = sound1 + silent_temp
+        
+            output_dir = inputs[i+1][0]
+        
+            output_temp = sound1.overlay(sound2, position=(800 + done_time))
+            output_temp.export(output_dir, format="wav")
+            
+            done_time = done_time + 800
         
         i = i + 1
     
-    Audio = AudioSegment.from_wav(inputs[l-1])
-    silent = AudioSegment.silent(duration=1590)
+    Audio = AudioSegment.from_wav(inputs[l-1][0])
+    silent = AudioSegment.silent(duration=1580)
     c = silent + Audio
     c.export(output, format="wav")
     
@@ -43,8 +59,9 @@ def joint_audio(inputs, output):
     DB.delete_table("audio")
     
     for i in inputs:
-        fn = os.path.basename(i)
-        word = DB.get_info("temp_audio", "filename", fn)[0][3]
+        print(i[0])
+        fn = os.path.basename(i[0])
+        word = DB.get_info_row("temp_audio", "filename", fn)[0][4]
         DB.data_push(os.path.basename(output), fn, word)
     
     #Sepatateファイルの中身を削除

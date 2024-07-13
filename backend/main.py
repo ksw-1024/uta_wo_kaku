@@ -59,7 +59,7 @@ def play_bgm():
 
 @app.route("/audio/voice.wav")
 def  voice_data():
-    latest_file = Database.get_info("audio", "id", "1")[0][2]
+    latest_file = Database.get_info_row("audio", "id", "1")[0][2]
     
     return send_from_directory("audio", latest_file)
 
@@ -67,6 +67,10 @@ def  voice_data():
 def render():
     voicetext = request.get_json()
     text = voicetext["text"]
+    
+    if(Wakachigaki.moraWakachi(text) > 8):
+        return_data = {"fileUrl": "TOO MANY LETTERS"}
+        return jsonify(return_data)
     
     dt_now = datetime.datetime.now().strftime("%Y%m%d%H%M%S%f")
     
@@ -78,10 +82,7 @@ def render():
 def glue():
     dt_now = datetime.datetime.now().strftime("%Y%m%d%H%M%S%f")
     
-    files = glob.glob(os.path.join(currentDir, "audio", "separates", "*"))
-    for file in files:
-        print(file)
-    
+    files = Database.get_info_column("filepath", "temp_audio")
     filename = dt_now + ".wav"
     
     JointWav.joint_audio(files, os.path.join(currentDir,"audio", filename))
@@ -100,6 +101,8 @@ def auto_onomatope():
     mode_data = request.get_json()
     count = mode_data["count"]
     
+    Database.delete_table("temp_audio")
+    
     for i in range(count):
         word = onomatope_list[random.randint(0, 276)][0]
         logger.info("{0} generated word : {1}".format(str(i+1), word))
@@ -115,7 +118,7 @@ def auto_onomatope():
         
     logger.info("ファイルの結合を開始します")
     
-    files = glob.glob(os.path.join(currentDir, "audio", "separates", "*"))
+    files = Database.get_info_column("filepath", "temp_audio")
 
     dt_now = datetime.datetime.now().strftime("%Y%m%d%H%M%S%f")
     filename = dt_now + ".wav"

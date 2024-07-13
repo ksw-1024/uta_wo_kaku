@@ -24,6 +24,10 @@ export default function Home() {
       });
       const jsonData = await response.json();
 
+      if (jsonData["fileUrl"] == "TOO MANY LETTERS") {
+        alert("文字数が多すぎます。8発音までにおさめてください。")
+        return
+      }
       alert("テキストを送信しました");
     } catch (err) {
       alert("テキストの送信に失敗しました");

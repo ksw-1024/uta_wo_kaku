@@ -5,7 +5,7 @@ import json
 
 from logging import getLogger, config
 
-from plugins import Database
+from plugins import Database, Wakachigaki
 
 currentDir = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), os.pardir))
 
@@ -40,7 +40,7 @@ def generate(text, filename, speaker=1):
     query["prePhonemeLength"] = 0
     query["pitchScale"] = 0.06
     
-    phonemes = len(query["accent_phrases"][0]["moras"])
+    phonemes = Wakachigaki.moraWakachi(text)
     logger.info("音素数 : {}".format(str(phonemes)))
     
     # 合成された音声データを取得
@@ -52,7 +52,7 @@ def generate(text, filename, speaker=1):
     )
 
     if response2.status_code == 200:
-        Database.temp_data_push(filename, text, phonemes)
+        Database.temp_data_push(filename, os.path.join(currentDir, "audio", "separates", filename), text, phonemes)
         
         with open(os.path.join(currentDir, "audio", "separates", filename), "wb") as fp:
             fp.write(response2.content)
