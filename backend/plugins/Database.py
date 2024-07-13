@@ -21,13 +21,13 @@ def data_push(filename, sepatate_filename, word):
     
     conn.close()
     
-def temp_data_push(separate_filename: str, word: str, onnso: int):
+def temp_data_push(separate_filename: str, filepath: str, word: str, onnso: int):
     conn = sqlite3.connect(os.path.join(currentDir, "SQLite3", "AUDIO_DATA.db"))
     
     cur = conn.cursor()
     
-    cur.execute('CREATE TABLE IF NOT EXISTS temp_audio(id INTEGER PRIMARY KEY AUTOINCREMENT, time TIMESTAMP, filename STRING, word STRING, onnso INTEGER)')
-    cur.execute('INSERT INTO temp_audio(time, filename, word, onnso) VALUES (CURRENT_TIMESTAMP, "{}", "{}", {})'.format(separate_filename, word, onnso))
+    cur.execute('CREATE TABLE IF NOT EXISTS temp_audio(id INTEGER PRIMARY KEY AUTOINCREMENT, time TIMESTAMP, filename STRING, filepath STRING, word STRING, onnso INTEGER)')
+    cur.execute('INSERT INTO temp_audio(time, filename, filepath, word, onnso) VALUES (CURRENT_TIMESTAMP, "{}", "{}", "{}", {})'.format(separate_filename, filepath, word, onnso))
     
     conn.commit()
     
@@ -43,7 +43,7 @@ def delete_table(table_name: str):
     conn.commit()
     conn.close()
     
-def get_info(table: str, category: str, key: str):
+def get_info_row(table: str, category: str, key: str):
     conn = sqlite3.connect(os.path.join(currentDir, "SQLite3","AUDIO_DATA.db"))
     cur = conn.cursor()
     
@@ -52,6 +52,16 @@ def get_info(table: str, category: str, key: str):
     
     conn.close()
     return word_data
+
+def get_info_column(column_name: str, table: str) -> list:
+    conn = sqlite3.connect(os.path.join(currentDir, "SQLite3", "AUDIO_DATA.db"))
+    cur = conn.cursor()
+    
+    cur.execute(f'SELECT {column_name} FROM {table}')
+    data = cur.fetchall()
+    
+    conn.close()
+    return data
     
 if __name__ == '__main__':
-    delete_table("audio")
+    delete_table("temp_audio")
