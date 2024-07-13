@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>【α版】うたをかく</title>
+    <title>うたうところ / 【α版】うたをかく</title>
     <style>
         [x-cloak] {
             display: none
@@ -19,7 +19,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="flex flex-wrap h-full bg-gray-50 items-center">
+<body class="flex flex-wrap h-full bg-gray-50">
     <div class="w-full items-start justify-center bg-gray-50">
         <section class="w-full px-8 text-gray-700 bg-white" {!! $attributes ?? '' !!}>
             <div
@@ -46,25 +46,9 @@
         </section>
     </div>
 
-    <div class="h-full">
-        <div class="grid grid-cols-12">
-            <img src=" {{ url_for('static', filename='images/logo/logo-no-background.svg' ) }}" alt="Logo" width="2000"
-                class="md:col-start-3 md:col-span-8 lg:col-start-4 lg:col-span-6 col-start-2 col-span-10 xl:col-start-6 xl:col-span-2 mt-[100px]">
-        </div>
-        <div class="w-full h-40 flex items-center justify-center">
-            <a href="/create">
-                <button class="hover:bg-slate-100 text-black font-bold py-2 px-4 rounded-full text-center">
-                    <i data-lucide="Play" class="my-class"></i>
-                </button>
-            </a>
-            <!-- <button id="start" type="button" value="再生" class="col-2">再生</button>
-            <button id="stop" type="button" value="停止">停止</button> -->
-        </div>
+    <div class="grid grid-cols-12">
+
     </div>
-
-
-    <audio id="bgm"></audio>
-    <audio id="count"></audio>
 
     <footer class="w-full text-gray-700 bg-white body-font absolute bottom-0" {!! $attributes ?? '' !!}>
         <div class="container flex flex-col items-center px-8 py-8 mx-auto max-w-7xl sm:flex-row">
@@ -130,6 +114,39 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"
     integrity="sha512-xi/RZRIF/S0hJ+yJJYuZ5yk6/8pCiRlEXZzoguSMl+vk2i3m6UjUO/WcZ11blRL/O+rnj94JRGwt/CHbc9+6EA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script type="text/javascript" src="{{ url_for('static', filename='js/bpm.js') }}"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script>
+    $("button#submit").click(function () {
+        var button = $(this);
+        button.attr("disabled", true);
+
+        var data = {
+            text: $("#word").val()
+        };
+
+        $.ajax({
+            type: "POST",
+            url: "http://127.0.0.1:8888/render_voice",
+            data: JSON.stringify(data),
+            contentType: 'application/json',
+            dataType: "json",
+            success: function (json_data) {
+                if (json_data["fileUrl"] == "TOO MANY LETTERS") {
+                    alert("文字数が多すぎます。8発音までにおさめてください。");
+                    return;
+                } else {
+                    alert("送信しました。");
+                }
+            },
+            error: function () {
+                alert("送信に失敗しました。");
+            },
+            complete: function () {
+                button.attr("disabled", false);
+            }
+        });
+    });
+</script>
 
 </html>

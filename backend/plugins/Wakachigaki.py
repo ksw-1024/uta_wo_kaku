@@ -33,3 +33,6 @@ def moraWakachi(text: str) -> int:
         
     logger.info(f"Results of the share and write : {re_mora.findall(kana_text)}")
     return len(re_mora.findall(kana_text))
+
+def to_kana(text: str):
+    return kks.convert(text)[0]["kana"]

@@ -1,0 +1,2567 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE housouKinshiYougoList SYSTEM "http://monoroch.net/kinshi/housouKinshiYougo-1.0.dtd">
+<housouKinshiYougoList date="2011-03-04" version="1.0">
+<dirtyWord>
+<word reading="あいぬけい" wordClass="名詞">アイヌ系</word>
+<replaceWordList>
+<word reading="あいぬ" wordClass="名詞">アイヌ</word>
+<word reading="あいぬみんぞく" wordClass="名詞">アイヌ民族</word>
+</replaceWordList>
+<notes>アイヌ系はアイヌ民族に対する強制同化が生んだ言葉</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="あいのこ" wordClass="名詞">合いの子</word>
+<replaceWordList>
+<word reading="こんけつ" wordClass="名詞">混血</word>
+<word reading="こんけつじん" wordClass="名詞">混血人</word>
+</replaceWordList>
+<notes>慣用的に用いる場合は「足して2で割った」ほどの意か</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="あおかん" wordClass="さ変名詞">青姦</word>
+<replaceWordList>
+<word reading="やごう" wordClass="名詞">野合</word>
+</replaceWordList>
+<notes>屋外で性交すること。意外に知らない人が多い</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="あか" wordClass="名詞">アカ</word>
+<replaceWordList>
+<word reading="きょうさんしゅぎしゃ" wordClass="名詞">共産主義者</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="あきめくら" wordClass="名詞">明盲</word>
+<replaceWordList>
+<word reading="じのよめないひと" wordClass="名詞">字の読めない人</word>
+<word reading="ひしきじしゃ" wordClass="名詞">非識字者</word>
+</replaceWordList>
+<notes>言い換え語に文盲があるが好ましくない</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="あしきり" wordClass="名詞">足切り</word>
+<replaceWordList>
+<word reading="よびせんばつ" wordClass="名詞">予備選抜</word>
+<word reading="にだんかいせんばつ" wordClass="名詞">二段階選抜</word>
+</replaceWordList>
+<notes>漫画「ラブひな」では、暗示として主人公の足が切れる</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="あしをあらう" wordClass="あわ行五段">足を洗う</word>
+<replaceWordList>
+<word reading="こうせいする" wordClass="さ変動詞">更生する</word>
+</replaceWordList>
+<notes>洗足池（東京）は「日蓮上人が足を洗った」池であり、慣用句として「足を洗う」意はない</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="あてうま" wordClass="名詞">当て馬</word>
+<replaceWordList>
+<word reading="こうたいよういん" wordClass="名詞">交代要員</word>
+</replaceWordList>
+<notes>野球の場合</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="あめこう" wordClass="名詞">アメ公</word>
+<replaceWordList>
+<word reading="あめりかじん" wordClass="名詞">アメリカ人</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="あらめん" wordClass="名詞">あらめん</word>
+<replaceWordList>
+<word reading="しょたいめん" wordClass="名詞">初対面</word>
+</replaceWordList>
+<notes>探偵用語</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="あるちゅう" wordClass="名詞">アル中</word>
+<replaceWordList>
+<word reading="あるこーるちゅうどく" wordClass="名詞">アルコール中毒</word>
+<word reading="あるこーるいぞんしょう" wordClass="名詞">アルコール依存症</word>
+</replaceWordList>
+<notes>「…中毒」は急性、「…依存症」は慢性のもの</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="あんま" wordClass="名詞">按摩</word>
+<replaceWordList>
+<word reading="まっさーじし" wordClass="名詞">マッサージ師</word>
+<word reading="あんまし" wordClass="名詞">あんま師</word>
+</replaceWordList>
+<notes>職業名</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="いえがら" wordClass="名詞">家柄</word>
+<replaceWordList/>
+<notes>結婚、就職の条件にするような表現は不可</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="いかさま" wordClass="さ変名詞">イカサマ</word>
+<replaceWordList>
+<word reading="にせもの" wordClass="名詞">にせもの</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="いざり" wordClass="名詞">躄</word>
+<replaceWordList>
+<word reading="あしのわるいひと" wordClass="名詞">足の悪い人</word>
+<word reading="あしのふじゆうなひと" wordClass="名詞">足の不自由な人</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="いせこじき" wordClass="名詞">伊勢乞食</word>
+<replaceWordList/>
+<notes>なるべく使わない。節倹（ケチ）な伊勢の人をののしっていう語</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="いたこう" wordClass="名詞">イタ公</word>
+<replaceWordList>
+<word reading="いたりあじん" wordClass="名詞">イタリア人</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="いたまえ" wordClass="名詞">板前</word>
+<replaceWordList>
+<word reading="ちょうりし" wordClass="名詞">調理師</word>
+<word reading="いたまえさん" wordClass="名詞">板前さん</word>
+</replaceWordList>
+<notes>職業名</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="いちゃもん" wordClass="名詞">いちゃもん</word>
+<replaceWordList>
+<word reading="いいがかり" wordClass="名詞">言い掛かり</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="いなか" wordClass="名詞">田舎</word>
+<replaceWordList/>
+<notes>東京との対比としては使わない。「町の子供。田舎の子供」や、生まれた土地の意味として使う場合は、悪印象を与えないよう配慮し使用する</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="いぬごろし" wordClass="名詞">犬殺し</word>
+<replaceWordList>
+<word reading="やけんほかくいん" wordClass="名詞">野犬捕獲員</word>
+<word reading="きょうけんびょうよぼうぎじゅついん" wordClass="名詞">狂犬病予防技術員</word>
+</replaceWordList>
+<notes>職業名。「犬取り」とも</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="いみん" wordClass="名詞">移民</word>
+<replaceWordList>
+<word reading="かいがいいじゅうしゃ" wordClass="名詞">海外移住者</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="いも" wordClass="名詞">イモ</word>
+<replaceWordList>
+<word reading="いなかもの" wordClass="名詞">田舎者</word>
+</replaceWordList>
+<notes>なるべく使わない</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="いんちき" wordClass="さ変名詞">インチキ</word>
+<replaceWordList>
+<word reading="ごまかし" wordClass="名詞">ごまかし</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="いんでぃあんうそつかない" wordClass="か行五段">インディアン嘘つかない</word>
+<replaceWordList/>
+<notes>比喩表現は不可。「クレタ人は嘘つきだ」はOK。</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="いんばい" wordClass="さ変名詞">淫売</word>
+<replaceWordList>
+<word reading="ばいしゅん" wordClass="さ変名詞">売春</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="うらにほん" wordClass="名詞">裏日本</word>
+<replaceWordList>
+<word reading="にほんかいがわ" wordClass="名詞">日本海側</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="うんこ" wordClass="さ変名詞">うんこ</word>
+<replaceWordList>
+<word reading="だいべん" wordClass="名詞">大便</word>
+<word reading="うんち" wordClass="名詞">うんち</word>
+</replaceWordList>
+<notes>幼児語の「うんち」は可。2005/10/19「トリビアの泉」でうんこに関するネタが紹介され連呼された。バラエティの文脈では可か</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="うんちゃん" wordClass="名詞">運ちゃん</word>
+<replaceWordList>
+<word reading="うんてんしゅ" wordClass="名詞">運転手</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="えすきもー" wordClass="名詞">エスキモー</word>
+<replaceWordList>
+<word reading="いぬいっと" wordClass="名詞">イヌイット</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="えた" wordClass="名詞">穢多</word>
+<replaceWordList/>
+<notes>使わない。特に江戸期、非人とともに被差別階級とされた。ちなみにスペインの反政府組織ETA（バスク祖国と自由）は“えた”と発音する</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="えちごのこめつき" wordClass="名詞">越後の米つき</word>
+<replaceWordList/>
+<notes>なるべく使わない</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="えちぜんくらげ" wordClass="名詞">エチゼンクラゲ</word>
+<replaceWordList>
+<word reading="おおがたくらげ" wordClass="名詞">大型クラゲ</word>
+</replaceWordList>
+<notes>福井県水産課の要請によるが、2006/01現在マスコミは自粛していない模様。1920年、同県水産試験場長・野村貫一が新種のクラゲを発見、命名した</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="えでぃたー" wordClass="名詞">エディター</word>
+<replaceWordList>
+<word reading="へんしゅうしゃ" wordClass="名詞">編集者</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="おーえる" wordClass="名詞">ＯＬ</word>
+<replaceWordList>
+<word reading="じょししゃいん" wordClass="名詞">女子社員</word>
+<word reading="じょしじむいん" wordClass="名詞">女子事務員</word>
+<word reading="かいしゃづとめのじょせい" wordClass="名詞">会社勤めの女性</word>
+</replaceWordList>
+<notes>「ＯＬ」の乱用は避ける</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="おーるどみす" wordClass="名詞">オールドミス</word>
+<replaceWordList/>
+<notes>使わない。和製英語。未婚のまま婚期を過ぎた女性。「負け犬」と同義と考えられるが、負け犬はメディアで大々的に扱われている</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="おかま" wordClass="名詞">オカマ</word>
+<replaceWordList/>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="おきなかし" wordClass="名詞">沖仲仕</word>
+<replaceWordList>
+<word reading="こうわんろうどうしゃ" wordClass="名詞">港湾労働者</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="おし" wordClass="名詞">唖</word>
+<replaceWordList>
+<word reading="くちのふじゆうなひと" wordClass="名詞">口の不自由な人</word>
+<word reading="ろうしゃ" wordClass="名詞">聾者</word>
+<word reading="ろうあしゃ" wordClass="名詞">ろうあ者</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="おちうどぶらく" wordClass="名詞">落人部落</word>
+<replaceWordList>
+<word reading="おちうどむら" wordClass="名詞">落人村</word>
+</replaceWordList>
+<notes>戦等により逃亡した者が住み着いた村の意か
+ちなみに落武者は</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="おちこぼれ" wordClass="名詞">落ちこぼれ</word>
+<replaceWordList>
+<word reading="じゅぎょうについていけないこども" wordClass="名詞">授業についていけない子供</word>
+<word reading="がくしょう・せいせきふしんのこども" wordClass="名詞">学業・成績不振の子供</word>
+</replaceWordList>
+<notes>やむをえない場合は「いわゆる落ちこぼれ」と表現する</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="おとしまえ" wordClass="名詞">落とし前</word>
+<replaceWordList>
+<word reading="きんせんのからんだけっちゃく" wordClass="名詞">金銭の絡んだ決着</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="おぼれじぬ" wordClass="な行五段">溺れ死ぬ</word>
+<replaceWordList>
+<word reading="おぼれてしぬ" wordClass="な行五段">溺れて死ぬ</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="おまわり" wordClass="名詞">お巡り</word>
+<replaceWordList>
+<word reading="けいさつかん" wordClass="名詞">警察官</word>
+<word reading="おまわりさん" wordClass="名詞">お巡りさん</word>
+<word reading="じゅんさ" wordClass="名詞">巡査</word>
+</replaceWordList>
+<notes>幼児語としての「お巡りさん」は可とする</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="おもてにほん" wordClass="名詞">表日本</word>
+<replaceWordList>
+<word reading="たいへいようがわ" wordClass="名詞">太平洋側</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="おやかた" wordClass="名詞">親方</word>
+<replaceWordList>
+<word reading="ちーふ" wordClass="名詞">チーフ</word>
+<word reading="はんちょう" wordClass="名詞">班長</word>
+</replaceWordList>
+<notes>土木関係の語</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="おわいや" wordClass="名詞">おわい屋</word>
+<replaceWordList>
+<word reading="せいそういん" wordClass="名詞">清掃員</word>
+<word reading="さぎょういん" wordClass="名詞">作業員</word>
+</replaceWordList>
+<notes>「おわい」は大小便の意</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="おんなこども" wordClass="名詞">女子供</word>
+<replaceWordList/>
+<notes>なるべく使わない。女性や子供を軽んじる意を持つ</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="おんなのくさったような" wordClass="形容動詞">女の腐ったような</word>
+<replaceWordList/>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="おんぼう" wordClass="名詞">隠坊</word>
+<replaceWordList>
+<word reading="かそうばじゅうぎょういん" wordClass="名詞">火葬場従業員</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="がいじん" wordClass="名詞">外人</word>
+<replaceWordList>
+<word reading="がいこくじん" wordClass="名詞">外国人</word>
+</replaceWordList>
+<notes>「グループ外、縁もゆかりも無い人」が原義</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="かえるのこはかえる" wordClass="名詞">蛙の子は蛙</word>
+<replaceWordList>
+<word reading="ぼんじんのこはぼんじんだ" wordClass="形容動詞">凡人の子は凡人だ</word>
+<word reading="こはおやににる" wordClass="一段動詞">子は親に似る</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="がき" wordClass="名詞">ガキ</word>
+<replaceWordList>
+<word reading="こども" wordClass="名詞">子供</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="かくしんはん" wordClass="名詞">確信犯</word>
+<replaceWordList>
+<word reading="こいはん" wordClass="名詞">故意犯</word>
+</replaceWordList>
+<notes>「故意に悪事を働く」は誤用。宗教・政治的な信念から正しいことと信じてする犯行が本義。ただかなり定着している</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="かくちょういん" wordClass="名詞">拡張員</word>
+<replaceWordList>
+<word reading="せーるすすたっふ" wordClass="名詞">セールススタッフ</word>
+<word reading="せーるすまん" wordClass="名詞">セールスマン</word>
+</replaceWordList>
+<notes>特に、インテリが書いてヤクザが売る出版物を売る人を指す</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="かくちょうだん" wordClass="名詞">拡張団</word>
+<replaceWordList>
+<word reading="せーるすちーむ" wordClass="名詞">セールスチーム</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="かくちょうだんちょう" wordClass="名詞">拡張団長</word>
+<replaceWordList>
+<word reading="せーるすちーむだいひょう" wordClass="名詞">セールスチーム代表</word>
+<word reading="せーるすちーむまねーじゃー" wordClass="名詞">セールスチームマネージャー</word>
+<word reading="せーるすちーむりーだー" wordClass="名詞">セールスチームリーダー</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="かけい" wordClass="名詞">家系</word>
+<replaceWordList/>
+<notes>なるべく使わない。「適性は家系と深くかかわる」などは不可</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="かこちょう" wordClass="名詞">過去帳</word>
+<replaceWordList>
+<word reading="だんかのきろく" wordClass="名詞">檀家の記録</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="がさ" wordClass="名詞">ガサ</word>
+<replaceWordList>
+<word reading="そうさく" wordClass="さ変名詞">捜索</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="かさっかき" wordClass="名詞">かさっかき</word>
+<replaceWordList>
+<word reading="せいびょうかんじゃ" wordClass="名詞">性病患者</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="かたあし" wordClass="名詞">片足</word>
+<replaceWordList>
+<word reading="かたほうのあし" wordClass="名詞">片方の足</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="かたおや" wordClass="名詞">片親</word>
+<replaceWordList>
+<word reading="ぼしかてい" wordClass="名詞">母子家庭</word>
+<word reading="ふしかてい" wordClass="名詞">父子家庭</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="かたておち" wordClass="名詞">片手落ち</word>
+<replaceWordList>
+<word reading="きくばりにかける" wordClass="一段動詞">気配りに欠ける</word>
+<word reading="ふこうへい" wordClass="名詞">不公平</word>
+</replaceWordList>
+<notes>本来侮蔑語ではないが「片手・落ち」と誤解されるためなるべく使わない</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="かたはい" wordClass="名詞">片肺</word>
+<replaceWordList>
+<word reading="かたよく" wordClass="名詞">片翼</word>
+</replaceWordList>
+<notes>比喩的表現の場合は要注意。双発の飛行機が片方のエンジンしか動かない状態から</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="かため" wordClass="名詞">片目</word>
+<replaceWordList>
+<word reading="かたほうのめ" wordClass="名詞">片方の目</word>
+<word reading="せきがん" wordClass="名詞">隻眼</word>
+<word reading="どくがん" wordClass="名詞">独眼</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="かたわ" wordClass="名詞">片端</word>
+<replaceWordList>
+<word reading="しんたいしょうがいしゃ" wordClass="名詞">身体障害者</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="がちゃめ" wordClass="名詞">がちゃ目</word>
+<replaceWordList>
+<word reading="しゃし" wordClass="名詞">斜視</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="かつぎや" wordClass="名詞">担ぎ屋</word>
+<replaceWordList>
+<word reading="ぎょうしょうにん" wordClass="名詞">行商人</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="かったい" wordClass="名詞">かったい</word>
+<replaceWordList>
+<word reading="はんせんびょう" wordClass="名詞">ハンセン病</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="がっぷりよつ" wordClass="名詞">がっぷり四つ</word>
+<replaceWordList>
+<word reading="がっぷり" wordClass="名詞">がっぷり</word>
+</replaceWordList>
+<notes>「四つ」が被差別部落を連想させるからか</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="かっぺ" wordClass="名詞">カッペ</word>
+<replaceWordList/>
+<notes>使わない。田舎兵衛（いなかっぺえ）の略。田舎者をさげすんでいう語</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="かみがたのぜいろく" wordClass="名詞">上方の贅六</word>
+<replaceWordList/>
+<notes>なるべく使わない。江戸の者が関西人をあざけっていった称</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="かりばら" wordClass="名詞">借り腹</word>
+<replaceWordList/>
+<notes>うみねこのなく頃に</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="かわかぶり" wordClass="名詞">皮被り</word>
+<replaceWordList>
+<word reading="ほうけい" wordClass="名詞">包茎</word>
+</replaceWordList>
+<notes>仮性包茎は日本人男性の6割とも9割とも言われている</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="かわきり" wordClass="名詞">皮切り</word>
+<replaceWordList>
+<word reading="てはじめ" wordClass="名詞">手始め</word>
+</replaceWordList>
+<notes>最初に据える灸は皮膚を切るような痛みを感じることから。包茎手術の意はないが卑俗に感じる場合もある</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="かわむこう" wordClass="名詞">川向こう</word>
+<replaceWordList/>
+<notes>使わない。川を隔てたむこうの岸の意</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="かわらこじき" wordClass="名詞">河原乞食</word>
+<replaceWordList>
+<word reading="しばいやくしゃ" wordClass="名詞">芝居役者</word>
+</replaceWordList>
+<notes>江戸期、歌舞伎が河原で興行されたため。現代において河原に住むホームレスを指す語ではない</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="かんごふ" wordClass="名詞">看護婦</word>
+<replaceWordList>
+<word reading="かんごし" wordClass="名詞">看護師</word>
+</replaceWordList>
+<notes>「看護士」でなく「看護師」</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="かんつう" wordClass="さ変名詞">姦通</word>
+<replaceWordList>
+<word reading="ふりんこうい" wordClass="名詞">不倫行為</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="きじるし" wordClass="名詞">キ印</word>
+<replaceWordList>
+<word reading="せいしんしょうがいしゃ" wordClass="名詞">精神障害者</word>
+</replaceWordList>
+<notes>使わない。キ印キッド→キャプテンキッド（ひょっこりひょうたん島）</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="きち" wordClass="名詞">キチ</word>
+<replaceWordList>
+<word reading="まにあ" wordClass="名詞">マニア</word>
+</replaceWordList>
+<notes>気違いの略。釣りキチ→釣りマニア</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="きちがい" wordClass="名詞">気違い</word>
+<replaceWordList/>
+<notes>原則として使わない。「サザエさん」第1話でサザエがカツオに対して言った</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="きちがいざた" wordClass="名詞">気違い沙汰</word>
+<replaceWordList/>
+<notes>絶対に使わない。常軌を逸した行いを指す</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="きちがいにはもの" wordClass="名詞">気違いに刃物</word>
+<replaceWordList/>
+<notes>絶対に使わない。極めて危険性が高い状況を示す慣用句</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="ぎっちょ" wordClass="名詞">ぎっちょ</word>
+<replaceWordList>
+<word reading="ひだりきき" wordClass="名詞">左利き</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="きゅうじ" wordClass="名詞">給仕</word>
+<replaceWordList>
+<word reading="ぼーい" wordClass="名詞">ボーイ</word>
+<word reading="せっきゃくがかり" wordClass="名詞">接客係</word>
+</replaceWordList>
+<notes>女工等と同様、時代背景を明確にして使われることがある</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="きゅうをすえる" wordClass="一段動詞">灸を据える</word>
+<replaceWordList>
+<word reading="おしおき" wordClass="さ変名詞">お仕置き</word>
+<word reading="せいさい" wordClass="さ変名詞">制裁</word>
+</replaceWordList>
+<notes>東京都はり・きゅう・あん摩マッサージ指圧師会が使わないよう要請している</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="きょうき" wordClass="名詞">狂気</word>
+<replaceWordList/>
+<notes>なるべく使わない</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="きょうきのさた" wordClass="名詞">狂気の沙汰</word>
+<replaceWordList/>
+<notes>なるべく使わない</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="きょうじょ" wordClass="名詞">狂女</word>
+<replaceWordList>
+<word reading="せいしんしょうがいしゃ" wordClass="名詞">精神障害者</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="きょうじん" wordClass="名詞">狂人</word>
+<replaceWordList/>
+<notes>むやみに多用しない</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="ぎょふ" wordClass="名詞">漁夫</word>
+<replaceWordList>
+<word reading="ぎょみん" wordClass="名詞">漁民</word>
+<word reading="ぎょせんいん" wordClass="名詞">漁船員</word>
+</replaceWordList>
+<notes>ただ「漁夫の利」が放送禁止用語である記述は確認できないため、慣用句としては使用可か</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="くーりー" wordClass="名詞">苦力</word>
+<replaceWordList>
+<word reading="ろうどうしゃ" wordClass="名詞">労働者</word>
+</replaceWordList>
+<notes>中国語から。特に中国・インド・アフリカ等植民地での下層肉体労働者の意</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="くずや" wordClass="名詞">屑屋</word>
+<replaceWordList>
+<word reading="はいひんかいしゅうぎょうしゃ" wordClass="名詞">廃品回収業者</word>
+<word reading="しげんこうかんぎょう" wordClass="名詞">資源交換業</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="ぐどん" wordClass="名詞">愚鈍</word>
+<replaceWordList/>
+<notes>使わない。無知で間が抜けている者の意</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="くびきり" wordClass="さ変名詞">首切り</word>
+<replaceWordList>
+<word reading="かいこ" wordClass="さ変名詞">解雇</word>
+<word reading="じんいんせいり" wordClass="さ変名詞">人員整理</word>
+</replaceWordList>
+<notes>ちなみに中国語では「イカを炒める」と言う。無職者が腹を空かせて布団にくるまるさまが、加熱して丸まったイカに見えることから</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="くみとりや" wordClass="名詞">汲み取り屋</word>
+<replaceWordList>
+<word reading="せいそういん" wordClass="名詞">清掃員</word>
+<word reading="さぎょういん" wordClass="名詞">作業員</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="くるう" wordClass="あわ行五段">狂う</word>
+<replaceWordList/>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="くろ" wordClass="名詞">クロ</word>
+<replaceWordList>
+<word reading="こくじん" wordClass="名詞">黒人</word>
+</replaceWordList>
+<notes>1988年岩波書店「ちびくろサンボ」絶版も、2005年瑞雲舎から復刊</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="くろんぼ" wordClass="名詞">黒んぼ</word>
+<replaceWordList>
+<word reading="こくじん" wordClass="名詞">黒人</word>
+</replaceWordList>
+<notes>「ちびくろサンボ」が絶版になった一方で、ドラゴンボール再放送ではミスター・ポポがカットされることはなかった</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="くわえこむ" wordClass="ま行五段">くわえ込む</word>
+<replaceWordList/>
+<notes>なるべく使わない。卑俗に聞こえるためと、慣用句として異性を連れ込む意があるからか</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="くんに" wordClass="さ変名詞">クンニ</word>
+<replaceWordList/>
+<notes>エデンの檻。2009/12/28伊集院光 深夜の馬鹿力で連呼</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="ぐんもうぞうをなでる" wordClass="一段動詞">群盲象をなでる</word>
+<replaceWordList/>
+<notes>特別な場合以外は使わない方がよい。凡人は大事業や大人物の一部しか見えず、全体像を見渡せない意</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="げいにん" wordClass="名詞">芸人</word>
+<replaceWordList>
+<word reading="げいのうじん" wordClass="名詞">芸能人</word>
+</replaceWordList>
+<notes>現代で一般的なのは「お笑い芸人」の略としてか</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="げーせん" wordClass="名詞">ゲーセン</word>
+<replaceWordList>
+<word reading="ごせんえん" wordClass="名詞">五千円</word>
+</replaceWordList>
+<notes>音楽家の符丁。G(ゲー)線(音楽)→5線→5千か。高木ブーがトーク番組で使用したがお詫び・訂正はされず。一般視聴者向けの言い換え語か。アミューズメント施設の意ではない</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="げじょ" wordClass="名詞">下女</word>
+<replaceWordList>
+<word reading="おてつだいさん" wordClass="名詞">お手伝いさん</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="けっとう" wordClass="名詞">血統</word>
+<replaceWordList/>
+<notes>結婚、就職などの文脈では注意する</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="けとう" wordClass="名詞">毛唐</word>
+<replaceWordList>
+<word reading="はくじん" wordClass="名詞">白人</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="げなん" wordClass="名詞">下男</word>
+<replaceWordList>
+<word reading="おてつだいさん" wordClass="名詞">お手伝いさん</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="けんぜんなるせいしんはけんぜんなるしんたいにやどる" wordClass="ら行五段">健全なる精神は健全なる身体に宿る</word>
+<replaceWordList/>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="げんなま" wordClass="名詞">ゲンナマ</word>
+<replaceWordList>
+<word reading="げんきん" wordClass="名詞">現金</word>
+<word reading="きゃっしゅ" wordClass="名詞">キャッシュ</word>
+</replaceWordList>
+<notes>現金を示す俗語。近世になってから使用されるように</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="ごうかん" wordClass="さ変名詞">強姦</word>
+<replaceWordList>
+<word reading="らんぼう" wordClass="さ変名詞">乱暴</word>
+<word reading="ぼうこう" wordClass="さ変名詞">暴行</word>
+</replaceWordList>
+<notes>刑法上は別。暴力や脅迫により意に反して性交すること。対義語は和姦</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="こうしんこく" wordClass="名詞">後進国</word>
+<replaceWordList>
+<word reading="かいはつとじょうこく" wordClass="名詞">開発途上国</word>
+<word reading="はってんとじょうこく" wordClass="名詞">発展途上国</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="こうしんじょ" wordClass="名詞">興信所</word>
+<replaceWordList>
+<word reading="みんかんちょうさきかん" wordClass="名詞">民間調査機関</word>
+<word reading="ちょうさがいしゃ" wordClass="名詞">調査会社</word>
+</replaceWordList>
+<notes>結婚、就職などの文脈では言い換え語の使用も要注意</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="ごうびょう" wordClass="名詞">業病</word>
+<replaceWordList/>
+<notes>使用に注意。悪業の報いでかかる、つらい病気の意</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="こうふ" wordClass="名詞">鉱夫</word>
+<replaceWordList>
+<word reading="こうざんろうどうしゃ" wordClass="名詞">鉱山労働者</word>
+<word reading="こういん" wordClass="名詞">鉱員</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="こうふ" wordClass="名詞">工夫</word>
+<replaceWordList>
+<word reading="ろうどうしゃ" wordClass="名詞">労働者</word>
+<word reading="さぎょういん" wordClass="名詞">作業員</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="こうふ" wordClass="名詞">坑夫</word>
+<replaceWordList>
+<word reading="こうざんろうどうしゃ" wordClass="名詞">鉱山労働者</word>
+<word reading="こういん" wordClass="名詞">鉱員</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="こうもうじん" wordClass="名詞">紅毛人</word>
+<replaceWordList>
+<word reading="はくじん" wordClass="名詞">白人</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="こくじん" wordClass="名詞">黒人</word>
+<replaceWordList/>
+<notes>不必要に使わない。黒人兵→米兵。人種の分類では単純に肌の色だけから区別するものではなく、例えばインド人は分類上は白人（コーカソイド）</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="こけ" wordClass="名詞">虚仮</word>
+<replaceWordList>
+<word reading="せいしんしょうがいしゃ" wordClass="名詞">精神障害者</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="こじいん" wordClass="名詞">孤児院</word>
+<replaceWordList>
+<word reading="じどうようごしせつ" wordClass="名詞">児童養護施設</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="こじき" wordClass="名詞">乞食</word>
+<replaceWordList>
+<word reading="ほーむれす" wordClass="名詞">ホームレス</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="こぞう" wordClass="名詞">小僧</word>
+<replaceWordList>
+<word reading="てんいん" wordClass="名詞">店員</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="こづかい" wordClass="名詞">小使い</word>
+<replaceWordList>
+<word reading="ようむいん" wordClass="名詞">用務員</word>
+<word reading="こうむいん" wordClass="名詞">校務員</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="こども" wordClass="名詞">子供</word>
+<replaceWordList>
+<word reading="こども" wordClass="名詞">子ども</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="こびと" wordClass="名詞">小人</word>
+<replaceWordList>
+<word reading="ようせい" wordClass="名詞">妖精</word>
+<word reading="どわーふ" wordClass="名詞">ドワーフ</word>
+</replaceWordList>
+<notes>白雪姫と7人の小人 → 白雪姫と7人のドワーフ（または妖精）</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="ごみや" wordClass="名詞">ゴミ屋</word>
+<replaceWordList>
+<word reading="はいひんかいしゅうぎょうしゃ" wordClass="名詞">廃品回収業者</word>
+<word reading="しげんこうかんぎょう" wordClass="名詞">資源交換業</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="ころし" wordClass="名詞">コロシ</word>
+<replaceWordList>
+<word reading="さつじん" wordClass="さ変名詞">殺人</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="さかなや" wordClass="名詞">魚屋</word>
+<replaceWordList>
+<word reading="せんぎょしょう" wordClass="名詞">鮮魚商</word>
+</replaceWordList>
+<notes>職業名</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="ざぎん" wordClass="名詞">ザギン</word>
+<replaceWordList>
+<word reading="ぎんざ" wordClass="名詞">銀座</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="さつ" wordClass="名詞">サツ</word>
+<replaceWordList>
+<word reading="けいさつ" wordClass="名詞">警察</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="さらきん" wordClass="名詞">サラ金</word>
+<replaceWordList>
+<word reading="しょうひしゃきんゆう" wordClass="名詞">消費者金融</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="さらぶれっど" wordClass="名詞">サラブレッド</word>
+<replaceWordList/>
+<notes>比喩表現に注意。サラブレッドには厳格な血統登録が行われ、1頭1頭に全て血統書が存在する</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="さんかんせいばつ" wordClass="さ変名詞">三韓征伐</word>
+<replaceWordList>
+<word reading="さんかんしゅっぺい" wordClass="名詞">三韓出兵</word>
+</replaceWordList>
+<notes>3世紀、神功皇后が行った（とされる）新羅から百済・高句麗への出兵を示し、日本書紀に記述が残る</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="さんごくじん" wordClass="名詞">三国人</word>
+<replaceWordList>
+<word reading="ちゅうごくじん" wordClass="名詞">中国人</word>
+<word reading="かんこくじん" wordClass="名詞">韓国人</word>
+</replaceWordList>
+<notes>第二次大戦中から終戦後にかけ、日米両国に対し中国韓国を第三者として「三国」と呼称したことから</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="さんすけ" wordClass="名詞">三助</word>
+<replaceWordList>
+<word reading="よくじょうじゅうぎょういん" wordClass="名詞">浴場従業員</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="さんば" wordClass="名詞">産婆</word>
+<replaceWordList>
+<word reading="じょさんし" wordClass="名詞">助産師</word>
+</replaceWordList>
+<notes>助産婦→助産師</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="しきもう" wordClass="名詞">色盲</word>
+<replaceWordList>
+<word reading="しきかくいじょう" wordClass="名詞">色覚異常</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="しな" wordClass="名詞">支那</word>
+<replaceWordList>
+<word reading="ちゅうごく" wordClass="名詞">中国</word>
+</replaceWordList>
+<notes>東シナ海、南シナ海は使用可。語源はChinaと同じく“秦”から、サンスクリット語を経て音訳したもの</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="しなじん" wordClass="名詞">支那人</word>
+<replaceWordList>
+<word reading="ちゅうごくじん" wordClass="名詞">中国人</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="しなそば" wordClass="名詞">支那蕎麦</word>
+<replaceWordList>
+<word reading="ちゅうかそば" wordClass="名詞">中華そば</word>
+<word reading="らーめん" wordClass="名詞">ラーメン</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="しなちく" wordClass="名詞">支那竹</word>
+<replaceWordList>
+<word reading="めんま" wordClass="名詞">メンマ</word>
+</replaceWordList>
+<notes>ある時期から「メンマ」呼称が一気に普及したため、世代によって他方が通じない場合がある</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="しなりょうり" wordClass="名詞">支那料理</word>
+<replaceWordList>
+<word reading="ちゅうごくりょうり" wordClass="名詞">中国料理</word>
+<word reading="ちゅうかりょうり" wordClass="名詞">中華料理</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="しのうこうしょう" wordClass="名詞">士農工商</word>
+<replaceWordList>
+<word reading="みぶんしゃかい" wordClass="名詞">身分社会</word>
+<word reading="かいきゅうせいど" wordClass="名詞">階級制度</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="じぷしー" wordClass="名詞">ジプシー</word>
+<replaceWordList>
+<word reading="ろま" wordClass="名詞">ロマ</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="じへいしょうじ" wordClass="名詞">自閉症児</word>
+<replaceWordList>
+<word reading="じへいしょうのこども" wordClass="名詞">自閉症の子供</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="しま" wordClass="名詞">シマ</word>
+<replaceWordList>
+<word reading="なわばり" wordClass="名詞">なわばり</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="じまわり" wordClass="さ変名詞">地回り</word>
+<replaceWordList>
+<word reading="ぼうりょくだんいん" wordClass="名詞">暴力団員</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="じゃっぷ" wordClass="名詞">ジャップ</word>
+<replaceWordList>
+<word reading="にほんじん" wordClass="名詞">日本人</word>
+</replaceWordList>
+<notes>アメリカ等ではJapよりもNipの方が強い侮蔑を示すが、日本では一般的ではない</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="じゃり" wordClass="名詞">ジャリ</word>
+<replaceWordList>
+<word reading="こども" wordClass="名詞">子供</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="じゅー" wordClass="名詞">ジュー</word>
+<replaceWordList>
+<word reading="ゆだやじん" wordClass="名詞">ユダヤ人</word>
+</replaceWordList>
+<notes>Jew。欧米でユダヤ人を罵っていう語</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="じゅうい" wordClass="名詞">獣医</word>
+<replaceWordList>
+<word reading="じゅういし" wordClass="名詞">獣医師</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="しゅうせんや" wordClass="名詞">周旋屋</word>
+<replaceWordList>
+<word reading="しゅうせんぎょうしゃ" wordClass="名詞">周旋業者</word>
+<word reading="とちあっせんぎょうしゃ" wordClass="名詞">土地斡旋業者</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="しゅうちょう" wordClass="名詞">酋長</word>
+<replaceWordList>
+<word reading="ぶぞくちょう" wordClass="名詞">部族長</word>
+<word reading="しゅちょう" wordClass="名詞">首長</word>
+</replaceWordList>
+<notes>ゲロロ酋長 → ゲロロ艦長</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="じょう" wordClass="名詞">嬢</word>
+<replaceWordList>
+<word reading="しゅ" wordClass="名詞">手</word>
+</replaceWordList>
+<notes>電話交換嬢→電話交換手。うぐいす嬢など愛称は別</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="しょうがいしゃ" wordClass="名詞">障害者</word>
+<replaceWordList>
+<word reading="しょうがいしゃ" wordClass="名詞">障がい者</word>
+</replaceWordList>
+<notes>本来は障碍者。障害競走（競馬）→ジャンプステークス</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="しょうぎだおしになる" wordClass="ら行五段">将棋倒しになる</word>
+<replaceWordList>
+<word reading="おりかさなるようにたおれる" wordClass="一段動詞">折り重なるように倒れる</word>
+</replaceWordList>
+<notes>将棋連盟からの申し入れによる。ちなみにビリヤード協会は「玉突き事故」を容認している</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="じょうふ" wordClass="名詞">情夫</word>
+<replaceWordList>
+<word reading="あいじん" wordClass="名詞">愛人</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="じょうふ" wordClass="名詞">情婦</word>
+<replaceWordList>
+<word reading="あいじん" wordClass="名詞">愛人</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="じょきゅう" wordClass="名詞">女給</word>
+<replaceWordList>
+<word reading="ほすてす" wordClass="名詞">ホステス</word>
+<word reading="うぇいとれす" wordClass="名詞">ウェイトレス</word>
+</replaceWordList>
+<notes>給仕と同じく、時代背景から用いる場合がある</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="しょくぶつにんげん" wordClass="名詞">植物人間</word>
+<replaceWordList>
+<word reading="しょくぶつじょうたいにんげん" wordClass="名詞">植物状態人間</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="じょけつ" wordClass="名詞">女傑</word>
+<replaceWordList>
+<word reading="じょりゅう" wordClass="名詞">女流</word>
+<word reading="じょせい" wordClass="名詞">女性</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="じょこう" wordClass="名詞">女工</word>
+<replaceWordList>
+<word reading="じょしこういん" wordClass="名詞">女子工員</word>
+<word reading="じょしじゅうぎょういん" wordClass="名詞">女子従業員</word>
+</replaceWordList>
+<notes>時代背景を明確にした場合はよい</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="じょさんぷ" wordClass="名詞">助産婦</word>
+<replaceWordList>
+<word reading="じょさんし" wordClass="名詞">助産師</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="しょじょさく" wordClass="名詞">処女作</word>
+<replaceWordList>
+<word reading="だいいっさく" wordClass="名詞">第一作</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="しょじょほう" wordClass="名詞">処女峰</word>
+<replaceWordList>
+<word reading="みとうほう" wordClass="名詞">未踏峰</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="じょちゅう" wordClass="名詞">女中</word>
+<replaceWordList>
+<word reading="おてつだいさん" wordClass="名詞">お手伝いさん</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="しょっこう" wordClass="名詞">職工</word>
+<replaceWordList>
+<word reading="こういん" wordClass="名詞">工員</word>
+<word reading="こうじょうじゅうぎょういん" wordClass="名詞">工場従業員</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="しらっこ" wordClass="名詞">しらっこ</word>
+<replaceWordList>
+<word reading="はくひしょう" wordClass="名詞">白皮症</word>
+</replaceWordList>
+<notes>アルビノ。萌え要素の1つにも数えられる</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="しりぬぐい" wordClass="さ変名詞">尻拭い</word>
+<replaceWordList>
+<word reading="あとしまつ" wordClass="さ変動詞">後始末</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="しんしょうじ" wordClass="名詞">心障児</word>
+<replaceWordList>
+<word reading="しんしんしょうがいじ" wordClass="名詞">心身障害児</word>
+</replaceWordList>
+<notes>略さない。やむを得ない場合「身障児」とする</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="しんしょうしゃ" wordClass="名詞">心障者</word>
+<replaceWordList>
+<word reading="しんしんしょうがいしゃ" wordClass="名詞">心身障害者</word>
+</replaceWordList>
+<notes>略さない。やむを得ない場合「身障者」とする</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="しんへいみん" wordClass="名詞">新平民</word>
+<replaceWordList/>
+<notes>使わない。江戸期に賤民扱いされていた人々に対する明治以後の蔑称</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="ずーじゃー" wordClass="名詞">ズージャー</word>
+<replaceWordList>
+<word reading="じゃず" wordClass="名詞">ジャズ</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="すけ" wordClass="名詞">スケ</word>
+<replaceWordList>
+<word reading="おんな" wordClass="名詞">女</word>
+<word reading="じょうふ" wordClass="名詞">情婦</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="すけこまし" wordClass="名詞">すけこまし</word>
+<replaceWordList>
+<word reading="りょうしょくか" wordClass="名詞">漁色家</word>
+<word reading="ぷれいぼーい" wordClass="名詞">プレイボーイ</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="すちゅわーです" wordClass="名詞">スチュワーデス</word>
+<replaceWordList>
+<word reading="きゃくしつじょうむいん" wordClass="名詞">客室乗務員</word>
+<word reading="あてんだんと" wordClass="名詞">アテンダント</word>
+<word reading="ふらいとあてんだんと" wordClass="名詞">フライトアテンダント</word>
+<word reading="きゃびんあてんだんと" wordClass="名詞">キャビンアテンダント</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="すべりどめ" wordClass="名詞">滑り止め</word>
+<replaceWordList>
+<word reading="へいがんこう" wordClass="名詞">併願校</word>
+<word reading="あんぜんこう" wordClass="名詞">安全校</word>
+</replaceWordList>
+<notes>現在でも、受験生の間では「滑り止め」は一般に用いられる</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="ずらかる" wordClass="ら行五段">ずらかる</word>
+<replaceWordList>
+<word reading="にげる" wordClass="一段動詞">逃げる</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="すらむ" wordClass="名詞">スラム</word>
+<replaceWordList/>
+<notes>なるべく使わない。貧民街の意</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="せいさい" wordClass="名詞">正妻</word>
+<replaceWordList/>
+<notes>「正妻のポストを得た」など比喩的用法に注意</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="せいしんいじょう" wordClass="名詞">精神異常</word>
+<replaceWordList>
+<word reading="せいしんしょうがい" wordClass="名詞">精神障害</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="せいしんぶんれつびょう" wordClass="名詞">精神分裂病</word>
+<replaceWordList>
+<word reading="とうごうしっちょうしょう" wordClass="名詞">統合失調症</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="せいはく" wordClass="名詞">精薄</word>
+<replaceWordList>
+<word reading="せいしんはくじゃくじ" wordClass="名詞">精神薄弱児</word>
+</replaceWordList>
+<notes>略さない。「精神薄弱児」には侮蔑の意味はない</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="せむし" wordClass="名詞">傴僂</word>
+<replaceWordList>
+<word reading="ねこぜ" wordClass="名詞">猫背</word>
+</replaceWordList>
+<notes>なるべく使わない。ゲーム「悪魔城ドラキュラ」に「せむし男」が登場するが、米国版「Castlevania」では「のみ男」となっている</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="せんじん" wordClass="名詞">鮮人</word>
+<replaceWordList>
+<word reading="ちょうせんじん" wordClass="名詞">朝鮮人</word>
+</replaceWordList>
+<notes>使わないこと</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="せんすいふ" wordClass="名詞">潜水夫</word>
+<replaceWordList>
+<word reading="せんすいさぎょういん" wordClass="名詞">潜水作業員</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="せんずり" wordClass="さ変名詞">千摺り</word>
+<replaceWordList>
+<word reading="じいこうい" wordClass="さ変名詞">自慰行為</word>
+<word reading="おなにー" wordClass="さ変名詞">オナニー</word>
+</replaceWordList>
+<notes>多数回男性器を摺ることから</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="せんろこうふ" wordClass="名詞">線路工夫</word>
+<replaceWordList>
+<word reading="ほせんいん" wordClass="名詞">保線員</word>
+<word reading="ほせんくいん" wordClass="名詞">保線区員</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="そうじふ" wordClass="名詞">掃除婦</word>
+<replaceWordList>
+<word reading="せいそうさぎょういん" wordClass="名詞">清掃作業員</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="そうじふ" wordClass="名詞">掃除夫</word>
+<replaceWordList>
+<word reading="せいそうさぎょういん" wordClass="名詞">清掃作業員</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="ぞうやくふ" wordClass="名詞">雑役夫</word>
+<replaceWordList>
+<word reading="こうむいん" wordClass="名詞">校務員</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="そだちよりうじ" wordClass="名詞">育ちより氏</word>
+<replaceWordList/>
+<notes>使わない。「氏より育ち」も要注意</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="だいさんごく" wordClass="名詞">第三国</word>
+<replaceWordList/>
+<notes>中国・朝鮮の意味のときは不可。「三国人」の備考に語源詳細</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="だいしょや" wordClass="名詞">代書屋</word>
+<replaceWordList>
+<word reading="ぎょうせいしょし" wordClass="名詞">行政書士</word>
+</replaceWordList>
+<notes>直子の代筆</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="たいわんせいふ" wordClass="名詞">台湾政府</word>
+<replaceWordList>
+<word reading="たいわんとうきょく" wordClass="名詞">台湾当局</word>
+</replaceWordList>
+<notes>1972年日中国交樹立以後、日本政府は台湾政府を認めていないため</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="たいわんはげ" wordClass="名詞">台湾ハゲ</word>
+<replaceWordList>
+<word reading="とくとうびょう" wordClass="名詞">禿頭病</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="たけのこいしゃ" wordClass="名詞">タケノコ医者</word>
+<replaceWordList/>
+<notes>なるべく使わない。“やぶ”にも満たない技術の劣る医者の意</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="たこべや" wordClass="名詞">蛸部屋</word>
+<replaceWordList>
+<word reading="きゅうくつなさぎょういんしゅくしゃ" wordClass="名詞">窮屈な作業員宿舎</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="たたき" wordClass="名詞">タタキ</word>
+<replaceWordList>
+<word reading="ごうとう" wordClass="さ変名詞">強盗</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="だっちまん" wordClass="名詞">ダッチマン</word>
+<replaceWordList>
+<word reading="おらんだじん" wordClass="名詞">オランダ人</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="たまぶくろすじたろう" wordClass="名詞">玉袋筋太郎</word>
+<replaceWordList>
+<word reading="ちえぶくろけんたろう" wordClass="名詞">知恵袋賢太郎</word>
+</replaceWordList>
+<notes>NHKに出演の場合</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="たりきほんがん" wordClass="名詞">他力本願</word>
+<replaceWordList/>
+<notes>「他人任せ」の意味で使うのは誤用。弥陀の本願の力に頼って成仏する意</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="たれながす" wordClass="さ行五段">垂れ流す</word>
+<replaceWordList>
+<word reading="ながしっぱなしにする" wordClass="さ変動詞">流しっぱなしにする</word>
+</replaceWordList>
+<notes>公害問題は例外</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="ちえおくれ" wordClass="名詞">知恵遅れ</word>
+<replaceWordList>
+<word reading="ちてきしょうがい" wordClass="名詞">知的障害</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="ちかめ" wordClass="名詞">近目</word>
+<replaceWordList>
+<word reading="きんし" wordClass="名詞">近視</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="ちすじ" wordClass="名詞">血筋</word>
+<replaceWordList/>
+<notes>結婚、就職などの文脈では要注意</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="ちび" wordClass="名詞">チビ</word>
+<replaceWordList/>
+<notes>使わない。ちなみに2001年に問題となったメクラチビゴミムシは改名されなかった</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="ちほうしょう" wordClass="名詞">痴呆症</word>
+<replaceWordList>
+<word reading="にんちしょう" wordClass="名詞">認知症</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="ちゃりんこ" wordClass="名詞">チャリンコ</word>
+<replaceWordList>
+<word reading="すり" wordClass="名詞">スリ</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="ちゃんころ" wordClass="名詞">チャンコロ</word>
+<replaceWordList>
+<word reading="ちゅうごくじん" wordClass="名詞">中国人</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="ちゅうきょう" wordClass="名詞">中共</word>
+<replaceWordList>
+<word reading="ちゅうかじんみんきょうわこく" wordClass="名詞">中華人民共和国</word>
+<word reading="ちゅうごく" wordClass="名詞">中国</word>
+</replaceWordList>
+<notes>中国共産党の略ならよい</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="ちょうせんせいばつ" wordClass="さ変名詞">朝鮮征伐</word>
+<replaceWordList>
+<word reading="ちょうせんしゅっぺい" wordClass="名詞">朝鮮出兵</word>
+<word reading="ぶんろく・けいちょうのえき" wordClass="名詞">文禄・慶長の役</word>
+</replaceWordList>
+<notes>1592・1597年豊臣秀吉による李氏朝鮮への出兵</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="ちょうせんにんじん" wordClass="名詞">朝鮮人参</word>
+<replaceWordList>
+<word reading="こうらいにんじん" wordClass="名詞">高麗人参</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="ちょん" wordClass="名詞">チョン</word>
+<replaceWordList>
+<word reading="かんこくじん" wordClass="名詞">韓国人</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="ちんば" wordClass="名詞">跛</word>
+<replaceWordList>
+<word reading="あしのわるいひと" wordClass="名詞">足の悪い人</word>
+<word reading="あしのふじゆうなひと" wordClass="名詞">足の不自由な人</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="つりがき" wordClass="名詞">釣り書き</word>
+<replaceWordList>
+<word reading="じこしょうかいしょ" wordClass="名詞">自己紹介書</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="つれご" wordClass="名詞">連れ子</word>
+<replaceWordList>
+<word reading="おこさん" wordClass="名詞">お子さん</word>
+</replaceWordList>
+<notes>再婚に際して前夫・前妻の子供を指す。俗に「コブ」とも</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="つんぼ" wordClass="名詞">聾</word>
+<replaceWordList>
+<word reading="みみのふじゆうなひと" wordClass="名詞">耳の不自由な人</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="つんぼさじき" wordClass="名詞">聾桟敷</word>
+<replaceWordList>
+<word reading="きこえないところ" wordClass="名詞">きこえないところ</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="ていかいはつこく" wordClass="名詞">低開発国</word>
+<replaceWordList>
+<word reading="かいはつとじょうこく" wordClass="名詞">開発途上国</word>
+<word reading="はってんとじょうこく" wordClass="名詞">発展途上国</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="ていのう" wordClass="名詞">低脳</word>
+<replaceWordList>
+<word reading="がくしゅうしょうがい" wordClass="名詞">学習障害</word>
+<word reading="がくしゅうこんなん" wordClass="名詞">学習困難</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="ていのうじ" wordClass="名詞">低脳児</word>
+<replaceWordList>
+<word reading="がくしゅうしょうがいじ" wordClass="名詞">学習障害児</word>
+<word reading="がくしゅうこんなんじ" wordClass="名詞">学習困難児</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="でか" wordClass="名詞">デカ</word>
+<replaceWordList>
+<word reading="けいじ" wordClass="名詞">刑事</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="でかせぎ" wordClass="さ変名詞">出稼ぎ</word>
+<replaceWordList>
+<word reading="きせつろうどうしゃ" wordClass="名詞">季節労働者</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="でっち" wordClass="さ変名詞">丁稚</word>
+<replaceWordList>
+<word reading="てんいん" wordClass="名詞">店員</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="でもどり" wordClass="名詞">出戻り</word>
+<replaceWordList/>
+<notes>使わない。結婚した女性が離婚して生家に帰る、またその人の意</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="てんさいときょうじんはかみひとえ" wordClass="名詞">天才と狂人は紙一重</word>
+<replaceWordList/>
+<notes>なるべく使わない</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="てんぼう" wordClass="名詞">手ん棒</word>
+<replaceWordList>
+<word reading="せきわん" wordClass="名詞">隻腕</word>
+</replaceWordList>
+<notes>片方の腕が無い人を指す</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="どかた" wordClass="名詞">土方</word>
+<replaceWordList>
+<word reading="ろうどうしゃ" wordClass="名詞">労働者</word>
+<word reading="さぎょういん" wordClass="名詞">作業員</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="とくしゅがっきゅう" wordClass="名詞">特殊学級</word>
+<replaceWordList>
+<word reading="しんしょうじがっきゅう" wordClass="名詞">身障児学級</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="とくしゅがっこう" wordClass="名詞">特殊学校</word>
+<replaceWordList>
+<word reading="とくしゅきょういくがっこう" wordClass="名詞">特殊教育学校</word>
+</replaceWordList>
+<notes>養護学校、盲・ろう学校などの総称</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="とくしゅぶらく" wordClass="名詞">特殊部落</word>
+<replaceWordList>
+<word reading="どうわちく" wordClass="名詞">同和地区</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="どけんや" wordClass="名詞">土建屋</word>
+<replaceWordList>
+<word reading="どけんぎょうしゃ" wordClass="名詞">土建業者</word>
+<word reading="けんせつぎょうしゃ" wordClass="名詞">建設業者</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="どこう" wordClass="名詞">土工</word>
+<replaceWordList>
+<word reading="ろうどうしゃ" wordClass="名詞">労働者</word>
+<word reading="さぎょういん" wordClass="名詞">作業員</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="とこや" wordClass="名詞">床屋</word>
+<replaceWordList>
+<word reading="りようし" wordClass="名詞">理容師</word>
+<word reading="りはつし" wordClass="名詞">理髪師</word>
+<word reading="りようぎょう" wordClass="名詞">理容業</word>
+<word reading="りはつてん" wordClass="名詞">理髪店</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="どざえもん" wordClass="名詞">土左衛門</word>
+<replaceWordList>
+<word reading="すいしにん" wordClass="名詞">水死人</word>
+</replaceWordList>
+<notes>その様相が江戸期の力士「成瀬川土左衛門」を連想させたことから</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="とさつ" wordClass="さ変名詞">屠殺</word>
+<replaceWordList>
+<word reading="しょくにくかいたい" wordClass="名詞">食肉解体</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="とさつじょう" wordClass="名詞">屠殺場</word>
+<replaceWordList>
+<word reading="とちくじょう" wordClass="名詞">屠畜場</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="とさつにん" wordClass="名詞">屠殺人</word>
+<replaceWordList>
+<word reading="しょくにくしじょうしょくいん" wordClass="名詞">食肉市場職員</word>
+<word reading="とちくじょうじゅうぎょういん" wordClass="名詞">屠畜場従業員</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="どさまわり" wordClass="さ変名詞">どさ回り</word>
+<replaceWordList>
+<word reading="ちほうじゅんぎょう" wordClass="名詞">地方巡業</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="どじん" wordClass="名詞">土人</word>
+<replaceWordList>
+<word reading="げんじゅうみん" wordClass="名詞">原住民</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="ともかせぎ" wordClass="さ変名詞">共稼ぎ</word>
+<replaceWordList>
+<word reading="ともばたらき" wordClass="名詞">共働き</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="どもり" wordClass="名詞">吃</word>
+<replaceWordList>
+<word reading="げんごしょうがいしゃ" wordClass="名詞">言語障害者</word>
+<word reading="きつおん" wordClass="名詞">吃音</word>
+</replaceWordList>
+<notes>2005/10/23「ガキの使いやあらへんで」のトークで、壊れた(?)カーナビに対して浜田「○○○(ドモリ?)やないか」と発言、音声は編集された</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="どや" wordClass="名詞">ドヤ</word>
+<replaceWordList>
+<word reading="はんにんのかくれやすいやど" wordClass="名詞">犯人の隠れやすい宿</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="どやがい" wordClass="名詞">ドヤ街</word>
+<replaceWordList>
+<word reading="かんいしゅくはくがい" wordClass="名詞">簡易宿泊街</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="とやまのさんすけ" wordClass="名詞">富山の三助</word>
+<replaceWordList/>
+<notes>なるべく使わない</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="とるこじょう" wordClass="名詞">トルコ嬢</word>
+<replaceWordList>
+<word reading="そーぷれでぃ" wordClass="名詞">ソープレディ</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="とるこぶろ" wordClass="名詞">トルコ風呂</word>
+<replaceWordList>
+<word reading="そーぷらんど" wordClass="名詞">ソープランド</word>
+</replaceWordList>
+<notes>トルコ政府の要請に加え、1984年トルコ人留学生ヌスレット・サンジャクリによる厚生省直訴により改名、一部が支持した「ロマン風呂」を抑えて定着した</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="どんびゃくしょう" wordClass="名詞">どん百姓</word>
+<replaceWordList>
+<word reading="のうみん" wordClass="名詞">農民</word>
+<word reading="のうかのひと" wordClass="名詞">農家の人</word>
+<word reading="おひゃくしょうさん" wordClass="名詞">お百姓さん</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="なおん" wordClass="名詞">ナオン</word>
+<replaceWordList>
+<word reading="おんな" wordClass="名詞">女</word>
+<word reading="じょうふ" wordClass="名詞">情婦</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="なんせん" wordClass="名詞">南鮮</word>
+<replaceWordList>
+<word reading="だいかんみんこく" wordClass="名詞">大韓民国</word>
+<word reading="かんこく" wordClass="名詞">韓国</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="なんぶのさけのはなまがり" wordClass="名詞">南部の鮭の鼻曲がり</word>
+<replaceWordList/>
+<notes>なるべく使わない。産卵期に鮭の鼻が曲がる特性と、南部人（盛岡）がヘソ曲がりなのを掛けた語</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="にがー" wordClass="名詞">ニガー</word>
+<replaceWordList>
+<word reading="こくじん" wordClass="名詞">黒人</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="にぐろ" wordClass="名詞">ニグロ</word>
+<replaceWordList>
+<word reading="こくじん" wordClass="名詞">黒人</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="にごう" wordClass="名詞">二号</word>
+<replaceWordList>
+<word reading="あいじん" wordClass="名詞">愛人</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="にこよん" wordClass="名詞">ニコヨン</word>
+<replaceWordList>
+<word reading="じゆうろうどうしゃ" wordClass="名詞">自由労働者</word>
+</replaceWordList>
+<notes>職業安定所からの定額給が240円（100円2個と40円）だったことから</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="にほんのちべっと" wordClass="名詞">日本のチベット</word>
+<replaceWordList>
+<word reading="かそちたい" wordClass="名詞">過疎地帯</word>
+<word reading="へんち" wordClass="名詞">辺地</word>
+<word reading="こうざんちたい" wordClass="名詞">高山地帯</word>
+</replaceWordList>
+<notes>現在チベットは急速に開発が進み、2006年には鉄道としては世界最高地点（海抜5072m）を通りゴルムドとラサを結ぶ「青蔵鉄道」が開通</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="にんそく" wordClass="名詞">人足</word>
+<replaceWordList>
+<word reading="ろうどうしゃ" wordClass="名詞">労働者</word>
+<word reading="さぎょういん" wordClass="名詞">作業員</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="にんぴにん" wordClass="名詞">人非人</word>
+<replaceWordList>
+<word reading="ひとでなし" wordClass="名詞">人でなし</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="にんぷ" wordClass="名詞">人夫</word>
+<replaceWordList>
+<word reading="ろうどうしゃ" wordClass="名詞">労働者</word>
+<word reading="さぎょういん" wordClass="名詞">作業員</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="ねこばば" wordClass="さ変名詞">猫糞</word>
+<replaceWordList/>
+<notes>なるべく使わない</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="のうふ" wordClass="名詞">農夫</word>
+<replaceWordList>
+<word reading="のうみん" wordClass="名詞">農民</word>
+<word reading="のうぎょう" wordClass="さ変名詞">農業</word>
+<word reading="のうか" wordClass="名詞">農家</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="のうまくえん" wordClass="名詞">脳膜炎</word>
+<replaceWordList>
+<word reading="せいしんしょうがいしゃ" wordClass="名詞">精神障害者</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="のび" wordClass="名詞">ノビ</word>
+<replaceWordList>
+<word reading="あきす" wordClass="名詞">空き巣</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="はーふ" wordClass="名詞">ハーフ</word>
+<replaceWordList>
+<word reading="こんけつ" wordClass="名詞">混血</word>
+<word reading="こんけつじん" wordClass="名詞">混血人</word>
+</replaceWordList>
+<notes>ヒョウとライオンの混血は「レオポン」。また言い換えに「ダブル」とも</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="ぱーまや" wordClass="名詞">パーマ屋</word>
+<replaceWordList>
+<word reading="びよういん" wordClass="名詞">美容院</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="ばかちょんかめら" wordClass="名詞">馬鹿チョンカメラ</word>
+<replaceWordList>
+<word reading="おーとまちっくかめら" wordClass="名詞">オートマチックカメラ</word>
+<word reading="ぜんじどうかめら" wordClass="名詞">全自動カメラ</word>
+</replaceWordList>
+<notes>「馬鹿でもチョンと押せば写せるカメラ」が説としては有力か</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="ばかでもちょんでも" wordClass="名詞">馬鹿でもチョンでも</word>
+<replaceWordList/>
+<notes>なるべく使わない。チョンは朝鮮人に対する蔑称</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="はくち" wordClass="名詞">白痴</word>
+<replaceWordList>
+<word reading="せいしんしょうがいしゃ" wordClass="名詞">精神障害者</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="ぱくる" wordClass="ら行五段">パクる</word>
+<replaceWordList>
+<word reading="たいほする" wordClass="さ変動詞">逮捕する</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="ばくろう" wordClass="名詞">馬喰</word>
+<replaceWordList>
+<word reading="かちくなかがいにん" wordClass="名詞">家畜仲買人</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="はしため" wordClass="名詞">端女</word>
+<replaceWordList/>
+<notes>うみねこのなく頃にから。召使いの女の意</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="はだいろ" wordClass="名詞">肌色</word>
+<replaceWordList>
+<word reading="ぺーるおれんじ" wordClass="名詞">ペールオレンジ</word>
+<word reading="うすだいだい" wordClass="名詞">うすだいだい</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="ばたや" wordClass="名詞">バタ屋</word>
+<replaceWordList>
+<word reading="はいひんかいしゅうぎょうしゃ" wordClass="名詞">廃品回収業者</word>
+<word reading="しげんこうかんぎょう" wordClass="名詞">資源交換業</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="はっきょうする" wordClass="さ変名詞">発狂する</word>
+<replaceWordList>
+<word reading="きがくるう" wordClass="あわ行五段">気が狂う</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="ばてい" wordClass="名詞">馬丁</word>
+<replaceWordList>
+<word reading="ばしゅ" wordClass="名詞">馬手</word>
+<word reading="きゅうむいん" wordClass="名詞">厩務員</word>
+</replaceWordList>
+<notes>明治からの賎業としての「馬丁」が連想される。競馬法では馬丁のまま</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="ぱんすけ" wordClass="名詞">パン助</word>
+<replaceWordList>
+<word reading="しょうふ" wordClass="名詞">娼婦</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="ばんた" wordClass="名詞">番太</word>
+<replaceWordList/>
+<notes>どうしても必要な場合「番小屋の○○」というようにする</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="はんとうじん" wordClass="名詞">半島人</word>
+<replaceWordList/>
+<notes>使わないこと</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="はんば" wordClass="名詞">飯場</word>
+<replaceWordList>
+<word reading="さぎょういんしゅくしゃ" wordClass="名詞">作業員宿舎</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="ひかれもの" wordClass="名詞">引かれ者</word>
+<replaceWordList/>
+<notes>なるべく使わない。刑場に引かれていく罪人の意か</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="びっこ" wordClass="名詞">跛</word>
+<replaceWordList>
+<word reading="あしのわるいひと" wordClass="名詞">足の悪い人</word>
+<word reading="あしのふじゆうなひと" wordClass="名詞">足の不自由な人</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="ひにん" wordClass="名詞">非人</word>
+<replaceWordList/>
+<notes>使わない。江戸期、えたとともに賤民視された人々の呼称</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="ひも" wordClass="名詞">ヒモ</word>
+<replaceWordList>
+<word reading="かんけいあるおとこ" wordClass="名詞">関係ある男</word>
+</replaceWordList>
+<notes>女に金品を貢がせて生活する男を指す俗語</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="ひゃくしょう" wordClass="名詞">百姓</word>
+<replaceWordList>
+<word reading="のうみん" wordClass="名詞">農民</word>
+<word reading="のうかのひと" wordClass="名詞">農家の人</word>
+<word reading="おひゃくしょうさん" wordClass="名詞">お百姓さん</word>
+</replaceWordList>
+<notes>NHKで農業従事者が自分のことを「百姓」と言い放送事故になったとも</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="ひやとい" wordClass="名詞">日雇い</word>
+<replaceWordList>
+<word reading="じゆうろうどうしゃ" wordClass="名詞">自由労働者</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="ひんのう" wordClass="名詞">貧農</word>
+<replaceWordList>
+<word reading="まずしいのうみん" wordClass="名詞">貧しい農民</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="ぶおとこ" wordClass="名詞">醜男</word>
+<replaceWordList>
+<word reading="きりょうのわるいおとこ" wordClass="名詞">器量の悪い男</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="ふかしょくみん" wordClass="名詞">不可触民</word>
+<replaceWordList>
+<word reading="はりじゃん" wordClass="名詞">ハリジャン</word>
+</replaceWordList>
+<notes>インドのカースト制におけるカースト外の身分</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="ふぐ" wordClass="名詞">不具</word>
+<replaceWordList>
+<word reading="しんたいしょうがいしゃ" wordClass="名詞">身体障害者</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="ふけい" wordClass="名詞">父兄</word>
+<replaceWordList>
+<word reading="ふぼ" wordClass="名詞">父母</word>
+<word reading="ほごしゃ" wordClass="名詞">保護者</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="ふじのやまい" wordClass="名詞">不治の病</word>
+<replaceWordList>
+<word reading="なおりにくいびょうき" wordClass="名詞">治りにくい病気</word>
+<word reading="なんびょう" wordClass="名詞">難病</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="ぶす" wordClass="名詞">ブス</word>
+<replaceWordList/>
+<notes>使わない</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="ぶたばこ" wordClass="名詞">ブタ箱</word>
+<replaceWordList>
+<word reading="りゅうちじょう" wordClass="名詞">留置場</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="ぶつ" wordClass="名詞">ブツ</word>
+<replaceWordList>
+<word reading="とうひん" wordClass="名詞">盗品</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="ふみきりばん" wordClass="名詞">踏切番</word>
+<replaceWordList>
+<word reading="ふみきりけいしゅ" wordClass="名詞">踏切警手</word>
+<word reading="ふみきりほあんがかり" wordClass="名詞">踏切保安係</word>
+</replaceWordList>
+<notes>保安係を必要とする踏切は第1種乙・第2種があるが、第2種は国内に既に無く第1種乙も数少ない</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="ぶらいんどたっち" wordClass="さ変名詞">ブラインドタッチ</word>
+<replaceWordList>
+<word reading="たっちたいぴんぐ" wordClass="さ変名詞">タッチタイピング</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="ぶらく" wordClass="名詞">部落</word>
+<replaceWordList>
+<word reading="しゅうらく" wordClass="名詞">集落</word>
+<word reading="ちく" wordClass="名詞">地区</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="ふろうじ" wordClass="名詞">浮浪児</word>
+<replaceWordList>
+<word reading="ほーむれすのこども" wordClass="名詞">ホームレスの子供</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="ふろうしゃ" wordClass="名詞">浮浪者</word>
+<replaceWordList>
+<word reading="ほーむれす" wordClass="名詞">ホームレス</word>
+</replaceWordList>
+<notes>日本語には浮浪者の適切な言い換えが無く、英語から代用している</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="ぺいかん" wordClass="名詞">ペイ患</word>
+<replaceWordList>
+<word reading="まやくかんじゃ" wordClass="名詞">麻薬患者</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="ぺいちゅう" wordClass="名詞">ペイ中</word>
+<replaceWordList>
+<word reading="まやくちゅうどく" wordClass="名詞">麻薬中毒</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="ぼうず" wordClass="名詞">坊主</word>
+<replaceWordList>
+<word reading="そうりょ" wordClass="名詞">僧侶</word>
+<word reading="おぼうさん" wordClass="名詞">お坊さん</word>
+</replaceWordList>
+<notes>坊主頭→丸刈り</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="ほくせん" wordClass="名詞">北鮮</word>
+<replaceWordList>
+<word reading="ちょうせんみんしゅしゅぎじんみんきょうわこく" wordClass="名詞">朝鮮民主主義人民共和国</word>
+<word reading="きたちょうせん" wordClass="名詞">北朝鮮</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="ぽこぺん" wordClass="名詞">ポコペン</word>
+<replaceWordList>
+<word reading="ちゅうごくじん" wordClass="名詞">中国人</word>
+</replaceWordList>
+<notes>ポコペン人→ペコポン人（ケロロ軍曹）。中国語の「不 句多 本 bu gou ben」(金額が足りない)から。かつて日中貿易の際、中国人商人がよく用いたことから</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="ほせんこうふ" wordClass="名詞">保線工夫</word>
+<replaceWordList>
+<word reading="ほせんくいん" wordClass="名詞">保線区員</word>
+<word reading="ほせんさぎょういん" wordClass="名詞">保線作業員</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="ぽっぽーや" wordClass="名詞">ポッポー屋</word>
+<replaceWordList>
+<word reading="てつどういん" wordClass="名詞">鉄道員</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="ほぼ" wordClass="名詞">保母</word>
+<replaceWordList>
+<word reading="ほいくし" wordClass="名詞">保育士</word>
+</replaceWordList>
+<notes>保母・保父→保育士
+ロリコンの神様、宮崎駿は保育園を経営している。</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="ぽりこう" wordClass="名詞">ポリ公</word>
+<replaceWordList>
+<word reading="けいさつかん" wordClass="名詞">警察官</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="ほんごしをいれる" wordClass="一段動詞">本腰を入れる</word>
+<replaceWordList/>
+<notes>卑俗な感じを持つ人もあるので、注意して使う</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="ぽんびき" wordClass="さ変名詞">ぽん引き</word>
+<replaceWordList>
+<word reading="きゃくびき" wordClass="さ変名詞">客引き</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="ほんぼし" wordClass="名詞">ほんぼし</word>
+<replaceWordList>
+<word reading="しんはんにん" wordClass="名詞">真犯人</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="まえつき" wordClass="名詞">まえつき</word>
+<replaceWordList>
+<word reading="ぜんれきつき" wordClass="名詞">前歴つき</word>
+</replaceWordList>
+<notes>執行猶予は前科にならない</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="まじょっこ" wordClass="名詞">魔女っ子</word>
+<replaceWordList>
+<word reading="まほうしょうじょ" wordClass="名詞">魔法少女</word>
+</replaceWordList>
+<notes>「悪魔のような子供」の意</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="またにかける" wordClass="一段動詞">股に掛ける</word>
+<replaceWordList/>
+<notes>なるべく使わない</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="まちいしゃ" wordClass="名詞">町医者</word>
+<replaceWordList>
+<word reading="かいぎょうい" wordClass="名詞">開業医</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="まんこ" wordClass="さ変名詞">マンコ</word>
+<replaceWordList>
+<word reading="じょせいき" wordClass="名詞">女性器</word>
+</replaceWordList>
+<notes>ちんこは禁止されず。また「ほーみ」「べちょこ」「おめこ」など方言も禁止されていない。「ばか！ばか！まんこ！」</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="まんしゅう" wordClass="名詞">満州</word>
+<replaceWordList>
+<word reading="ちゅうごくとうほくぶ（きゅうまんしゅう）" wordClass="名詞">中国東北部（旧満州）</word>
+</replaceWordList>
+<notes>満州事変→柳条湖事件</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="みかいじん" wordClass="名詞">未開人</word>
+<replaceWordList>
+<word reading="げんじゅうみん" wordClass="名詞">原住民</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="みかいはつこく" wordClass="名詞">未開発国</word>
+<replaceWordList>
+<word reading="はってんとじょうこく" wordClass="名詞">発展途上国</word>
+<word reading="かいはつとじょうこく" wordClass="名詞">開発途上国</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="みつくち" wordClass="名詞">三つ口</word>
+<replaceWordList/>
+<notes>なるべく使わない。口唇裂の俗称</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="みぶん" wordClass="名詞">身分</word>
+<replaceWordList/>
+<notes>使用箇所により注意</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="みぼうじん" wordClass="名詞">未亡人</word>
+<replaceWordList/>
+<notes>「故○○氏の夫人」というように置き換える</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="みもとちょうさ" wordClass="名詞">身元調査</word>
+<replaceWordList/>
+<notes>なるべく使わない</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="むこをとる" wordClass="ら行五段">婿をとる</word>
+<replaceWordList/>
+<notes>なるべく使わない</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="むすめをかたづける" wordClass="一段動詞">娘を片付ける</word>
+<replaceWordList/>
+<notes>なるべく使わない</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="めいもんこう" wordClass="名詞">名門校</word>
+<replaceWordList/>
+<notes>なるべく使わない。野球放送などで「名門○○校」などという場合はあまり抵抗はない</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="めかけ" wordClass="名詞">妾</word>
+<replaceWordList>
+<word reading="あいじん" wordClass="名詞">愛人</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="めくら" wordClass="名詞">盲</word>
+<replaceWordList>
+<word reading="しりょくしょうがいしゃ" wordClass="名詞">視力障害者</word>
+<word reading="めのふじゆうなひと" wordClass="名詞">目の不自由な人</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="めくらじま" wordClass="名詞">盲縞</word>
+<replaceWordList/>
+<notes>なるべく使わない。木綿平織物の一種</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="めくらばんをおす" wordClass="さ行五段">盲判を押す</word>
+<replaceWordList>
+<word reading="ろくにみないではんをおす" wordClass="名詞">ろくに見ないで判を押す</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="めくらへびにおじず" wordClass="名詞">盲蛇に怖じず</word>
+<replaceWordList/>
+<notes>なるべく使わない。無知な者が無知である故に無鉄砲な振る舞いをする意</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="めくらめっぽう" wordClass="名詞">盲滅法</word>
+<replaceWordList>
+<word reading="やみくも" wordClass="名詞">やみくも</word>
+</replaceWordList>
+<notes>なるべく使わない。無闇に事を行うさま</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="めっかち" wordClass="名詞">めっかち</word>
+<replaceWordList>
+<word reading="せきがん" wordClass="名詞">隻眼</word>
+</replaceWordList>
+<notes>片方の目しか見えない人のこと</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="もうあいする" wordClass="さ変名詞">盲愛する</word>
+<replaceWordList>
+<word reading="むやみにかわいがる" wordClass="ら行五段">むやみに可愛がる</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="もうこしょう" wordClass="名詞">蒙古症</word>
+<replaceWordList>
+<word reading="だうんしょう" wordClass="名詞">ダウン症</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="もうじん" wordClass="名詞">盲人</word>
+<replaceWordList>
+<word reading="めのふじゆうなひと" wordClass="名詞">目の不自由な人</word>
+<word reading="しかくしょうがいしゃ" wordClass="名詞">視覚障害者</word>
+</replaceWordList>
+<notes>「盲人用信号」の表記は地域によっては残っている</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="もうもく" wordClass="名詞">盲目</word>
+<replaceWordList>
+<word reading="ぶんべつにかける" wordClass="一段動詞">分別に欠ける</word>
+<word reading="りせいがない" wordClass="形容詞">理性がない</word>
+</replaceWordList>
+<notes>比喩的表現の場合</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="もんもう" wordClass="名詞">文盲</word>
+<replaceWordList>
+<word reading="じのよめないひと" wordClass="名詞">字の読めない人</word>
+<word reading="ひしきじしゃ" wordClass="名詞">非識字者</word>
+</replaceWordList>
+<notes>中国では同義の「文盲wenmang」を現在でも使用しているとされる</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="やーさま" wordClass="名詞">ヤー様</word>
+<replaceWordList>
+<word reading="やくざ" wordClass="名詞">やくざ</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="やおや" wordClass="名詞">八百屋</word>
+<replaceWordList>
+<word reading="せいかぎょう" wordClass="名詞">青果業</word>
+<word reading="せいかしょう" wordClass="名詞">青果商</word>
+<word reading="やおやさん" wordClass="名詞">八百屋さん</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="やくぶそく" wordClass="名詞">役不足</word>
+<replaceWordList>
+<word reading="ちからぶそく" wordClass="名詞">力不足</word>
+</replaceWordList>
+<notes>「役に対して自分の能力が余りある」の意。「役に対して自分の能力が足りない」は力不足</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="やさぐれ" wordClass="名詞">やさぐれ</word>
+<replaceWordList>
+<word reading="ぐれんたい" wordClass="名詞">愚連隊</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="やばい" wordClass="形容詞">ヤバい</word>
+<replaceWordList>
+<word reading="あぶない" wordClass="形容詞">危ない</word>
+<word reading="きけんだ" wordClass="形容動詞">危険だ</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="やぶいしゃ" wordClass="名詞">藪医者</word>
+<replaceWordList/>
+<notes>なるべく使わない。診療能力の劣った下手な医者の意</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="やぶにらみ" wordClass="名詞">藪睨み</word>
+<replaceWordList>
+<word reading="しゃし" wordClass="名詞">斜視</word>
+<word reading="けんとうちがい" wordClass="名詞">見当違い</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="やんきー" wordClass="名詞">ヤンキー</word>
+<replaceWordList>
+<word reading="あめりかじん" wordClass="名詞">アメリカ人</word>
+</replaceWordList>
+<notes>アメリカ人、特に米国北東部住民に対する俗称・別称</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="やんきい" wordClass="名詞">ヤンキー</word>
+<replaceWordList>
+<word reading="ふりょうこういしょうねん" wordClass="名詞">不良行為少年</word>
+<word reading="ふりょうしょうねん" wordClass="名詞">不良少年</word>
+</replaceWordList>
+<notes>原義は河内弁話者に対する蔑称。「『やんけ』言い」が転じて。アメリカ人を示すヤンキーとは関連しない</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="ゆうびんふ" wordClass="名詞">郵便夫</word>
+<replaceWordList>
+<word reading="ゆうびんしゅうはいにん" wordClass="名詞">郵便集配人</word>
+<word reading="ゆうびんはいたつにん" wordClass="名詞">郵便配達人</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="ゆうびんや" wordClass="名詞">郵便屋</word>
+<replaceWordList>
+<word reading="ゆうびんはいたついん" wordClass="名詞">郵便配達員</word>
+<word reading="ゆうびんやさん" wordClass="名詞">郵便屋さん</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="ようご" wordClass="名詞">養護</word>
+<replaceWordList>
+<word reading="しんしんしょうがいじ" wordClass="名詞">心身障害児</word>
+</replaceWordList>
+<notes>心身障害者の意</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="ようろういん" wordClass="名詞">養老院</word>
+<replaceWordList>
+<word reading="ろうじんほーむ" wordClass="名詞">老人ホーム</word>
+<word reading="ろうじんようごしせつ" wordClass="名詞">老人養護施設</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="よせば" wordClass="名詞">寄せ場</word>
+<replaceWordList/>
+<notes>「人足寄せ場」の意。人足寄せ場とは江戸期に設けられたホームレス収容・職業訓練所</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="よつ" wordClass="名詞">ヨツ</word>
+<replaceWordList/>
+<notes>四本指のジェスチャーを行うことや、四本指のキャラクターを描くことも要注意</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="よつあし" wordClass="名詞">四つ足</word>
+<replaceWordList/>
+<notes>なるべく使わない。被差別部落を連想させる文脈では不可。四つ。関西地方で強く残るとも</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="よつつじ" wordClass="名詞">四つ辻</word>
+<replaceWordList>
+<word reading="じゅうじろ" wordClass="名詞">十字路</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="よめにやる" wordClass="ら行五段">嫁にやる</word>
+<replaceWordList/>
+<notes>なるべく使わない</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="よりめ" wordClass="名詞">寄目</word>
+<replaceWordList>
+<word reading="しゃし" wordClass="名詞">斜視</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="らいびょう" wordClass="名詞">癩病</word>
+<replaceWordList>
+<word reading="はんせんびょう" wordClass="名詞">ハンセン病</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="るんぺん" wordClass="名詞">ルンペン</word>
+<replaceWordList/>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="れいじょう" wordClass="名詞">令嬢</word>
+<replaceWordList>
+<word reading="むすめ" wordClass="名詞">娘</word>
+</replaceWordList>
+<notes>不必要な所に使うと逆差別になる</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="れんとげんぎし" wordClass="名詞">レントゲン技師</word>
+<replaceWordList>
+<word reading="しんりょうほうしゃせんぎし" wordClass="名詞">診療放射線技師</word>
+<word reading="しんりょうえっくすせんぎし" wordClass="名詞">診療エックス線技師</word>
+</replaceWordList>
+<notes>「診療エックス線技師」は旧制度の資格で、保持者は少数</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="ろうば" wordClass="名詞">老婆</word>
+<replaceWordList>
+<word reading="ろうふじん" wordClass="名詞">老婦人</word>
+<word reading="ろうじょ" wordClass="名詞">老女</word>
+</replaceWordList>
+<notes>老女は非常に嫌がられる</notes>
+</dirtyWord>
+<dirtyWord>
+<word reading="ろうむしゃ" wordClass="名詞">労務者</word>
+<replaceWordList>
+<word reading="ろうどうしゃ" wordClass="名詞">労働者</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="ろすけ" wordClass="名詞">露助</word>
+<replaceWordList>
+<word reading="ろしあじん" wordClass="名詞">ロシア人</word>
+</replaceWordList>
+<notes/>
+</dirtyWord>
+<dirtyWord>
+<word reading="ろんぱり" wordClass="名詞">ロンパリ</word>
+<replaceWordList>
+<word reading="しゃし" wordClass="名詞">斜視</word>
+</replaceWordList>
+<notes>一方の目でロンドンを見、他方の目でパリを見るような様を侮蔑して
+「ひんがら目」とも</notes>
+</dirtyWord>
+</housouKinshiYougoList>

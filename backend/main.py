@@ -8,8 +8,6 @@ import shutil
 from flask import Flask, jsonify, request, render_template, send_from_directory, url_for
 from flask_cors import CORS
 
-import glob
-
 import csv
 import random
 
@@ -17,7 +15,7 @@ from logging import getLogger, config
 
 #自分の関数読み出し
 
-from plugins import VoiceGenerater, Wakachigaki, JointWav, Database
+from plugins import VoiceGenerater, Wakachigaki, JointWav, Database, KinshiWord
 
 currentDir = os.path.dirname(os.path.abspath(__file__))
 
@@ -44,13 +42,28 @@ with open(os.path.join(currentDir, "setting", "log_config.json"), 'r') as f:
 config.dictConfig(log_conf)
 logger = getLogger(__name__)
     
-app = Flask(__name__)
+app = Flask(__name__, static_folder=os.path.join(currentDir, "static"))
 CORS(app)
 app.config["JSON_AS_ASCII"] = False
 
 @app.route("/")
-def display():
+def home_page():
     html = render_template("index.html")
+    return html
+
+@app.route("/create")
+def create_page():
+    html = render_template("create/index.html")
+    return html
+
+@app.route("/play")
+def play_page():
+    html = render_template("play/index.html")
+    return html
+
+@app.route("/about")
+def about_page():
+    html = render_template("about/index.html")
     return html
 
 @app.route("/audio/bgm.mp3")
@@ -67,6 +80,10 @@ def  voice_data():
 def render():
     voicetext = request.get_json()
     text = voicetext["text"]
+    
+    if(KinshiWord.is_ng(text)):
+        return_data = {"fileUrl": "THIS IS NG WORD"}
+        return jsonify(return_data)
     
     if(Wakachigaki.moraWakachi(text) > 8):
         return_data = {"fileUrl": "TOO MANY LETTERS"}
