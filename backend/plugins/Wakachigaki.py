@@ -23,10 +23,6 @@ c4 = '[ァ-ヴー]' #カタカナ１文字（長音含む）
 cond = '('+c1+'|'+c2+'|'+c3+'|'+c4+')'
 re_mora = re.compile(cond)
 
-<<<<<<< HEAD:backend/plugins/Wakachigaki.py
-def moraWakachi(kana_text):
-    return re_mora.findall(kana_text)
-=======
 kks = kakasi()
 
 def moraWakachi(text: str) -> int:
@@ -37,4 +33,3 @@ def moraWakachi(text: str) -> int:
         
     logger.info(f"Results of the share and write : {re_mora.findall(kana_text)}")
     return len(re_mora.findall(kana_text))
->>>>>>> backend_dev:backend/plugins/wakachigaki.py
