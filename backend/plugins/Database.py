@@ -3,7 +3,19 @@ import random, string
 
 import sqlite3
 
+import datetime
+
 currentDir = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), os.pardir))
+conn = sqlite3.connect(os.path.join(currentDir, "SQLite3","AUDIO_DATA.db"))
+
+cur = conn.cursor()
+cur.execute('CREATE TABLE IF NOT EXISTS audio(id INTEGER PRIMARY KEY AUTOINCREMENT, time TIMESTAMP, filename STRING, separate_filename STRING, word STRING)')
+cur.execute('CREATE TABLE IF NOT EXISTS temp_audio(id INTEGER PRIMARY KEY AUTOINCREMENT, time TIMESTAMP, filename STRING, filepath STRING, word STRING, onnso INTEGER)')
+cur.execute('CREATE TABLE IF NOT EXISTS history(id INTEGER PRIMARY KEY AUTOINCREMENT, time TIMESTAMP, filename STRING, word STRING)')
+
+
+conn.commit()
+conn.close()
 
 def randomname(n):
    randlst = [random.choice(string.ascii_letters + string.digits) for i in range(n)]
@@ -38,8 +50,8 @@ def history_data_push(filename: str, word: str):
     
     cur = conn.cursor()
     
-    cur.execute('CREATE TABLE IF NOT EXISTS temp_audio(id INTEGER PRIMARY KEY AUTOINCREMENT, time TIMESTAMP, filename STRING, word STRING)')
-    cur.execute('INSERT INTO temp_audio(time, filename, word) VALUES (CURRENT_TIMESTAMP, "{}", "{}", "{}", {})'.format(filename, word))
+    cur.execute('CREATE TABLE IF NOT EXISTS history(id INTEGER PRIMARY KEY AUTOINCREMENT, time TIMESTAMP, filename STRING, word STRING)')
+    cur.execute('INSERT INTO history(time, filename, word) VALUES (CURRENT_TIMESTAMP, "{}", "{}")'.format(filename, word))
     
     conn.commit()
     
@@ -74,6 +86,19 @@ def get_info_column(column_name: str, table: str) -> list:
     
     conn.close()
     return data
+
+def get_info_latest(table: str):
+    conn = sqlite3.connect(os.path.join(currentDir, "SQLite3", "AUDIO_DATA.db"))
+    cur = conn.cursor()
+    
+    latest_data = cur.execute(f"SELECT max(rowid), * FROM {table}").fetchall()
+    
+    return latest_data
+
+def all_reset_table():
+    delete_table("audio")
+    delete_table("temp_audio")
+    delete_table("history")
     
 if __name__ == '__main__':
-    delete_table("temp_audio")
+    all_reset_table()

@@ -1,0 +1,27 @@
+beautifulsoup4==4.12.3
+blinker==1.8.2
+certifi==2024.7.4
+charset-normalizer==3.3.2
+click==8.1.7
+Deprecated==1.2.14
+ffmpeg==1.4
+Flask==3.0.3
+Flask-Cors==4.0.1
+idna==3.7
+itsdangerous==2.2.0
+jaconv==0.3.4
+Jinja2==3.1.4
+MarkupSafe==2.1.5
+mecab-python3==1.0.9
+numpy==2.0.0
+pydantic==1.10.17
+pydub==0.25.1
+pykakasi==2.3.0
+requests==2.32.3
+soupsieve==2.5
+typing_extensions==4.12.2
+urllib3==2.2.2
+voicevox_core @ https://github.com/VOICEVOX/voicevox_core/releases/download/0.15.3/voicevox_core-0.15.3+cpu-cp38-abi3-macosx_11_0_arm64.whl#sha256=86d5c77fa9ca83ab2e46a0a29895184b15ccfeb10df75af39406ab636e686a1b
+Werkzeug==3.0.3
+wrapt==1.16.0
+yakinori==0.1.2

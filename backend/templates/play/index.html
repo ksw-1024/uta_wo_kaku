@@ -128,4 +128,34 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='js/bpm.js') }}"></script>
 
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function () {
+        var button = $(this);
+        button.attr("disabled", true);
+
+        var data = {
+            text: "text"
+        };
+
+        $.ajax({
+            type: "POST",
+            url: "http://localhost:8888/history",
+            data: JSON.stringify(data),
+            contentType: 'application/json',
+            dataType: "json",
+            success: function (json_data) {
+                console.log(json_data)
+            },
+            error: function () {
+                alert("受信に失敗しました。");
+            },
+            //complete: function () {
+            //button.attr("disabled", false);
+            //}
+        });
+    });
+</script>
+
 </html>

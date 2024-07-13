@@ -1,5 +1,4 @@
 import os
-import shutil
 
 from pydub import AudioSegment
 
@@ -18,6 +17,10 @@ logger = getLogger(__name__)
 
 def joint_audio(inputs, output):
     l = len(inputs)
+    
+    if(l == 0):
+        return
+    
     i = 0
     done_time = 0
     while (i < (l - 1)):
@@ -55,20 +58,8 @@ def joint_audio(inputs, output):
     c = silent + Audio
     c.export(output, format="wav")
     
-    #データベースへの登録
-    DB.delete_table("audio")
-    
     for i in inputs:
-        print(i[0])
         fn = os.path.basename(i[0])
         word = DB.get_info_row("temp_audio", "filename", fn)[0][4]
         DB.data_push(os.path.basename(output), fn, word)
         DB.history_data_push(os.path.basename(output), word)
-    
-    #Sepatateファイルの中身を削除
-    if(os.path.isdir(os.path.join(currentDir, "audio", "separates"))):
-        DB.delete_table("temp_audio")
-        
-        logger.info("ファイルの削除を実行します")
-        shutil.rmtree(os.path.join(currentDir, "audio", "separates"))
-        os.mkdir(os.path.join(currentDir, "audio", "separates"))

@@ -1,5 +1,6 @@
 import os
 import platform
+import time
 
 import json
 import datetime
@@ -12,6 +13,8 @@ import csv
 import random
 
 from logging import getLogger, config
+
+import threading
 
 #自分の関数読み出し
 
@@ -45,9 +48,45 @@ logger = getLogger(__name__)
 app = Flask(__name__, static_folder=os.path.join(currentDir, "static"))
 CORS(app)
 app.config["JSON_AS_ASCII"] = False
-
+     
+def joint_threads():
+    dt_now = datetime.datetime.now().strftime("%Y%m%d%H%M%S%f")
+    
+    files = Database.get_info_column("filepath", "temp_audio")
+    filename = dt_now + ".wav"
+    
+    JointWav.joint_audio(files, os.path.join(currentDir,"audio", filename))
+                
 @app.route("/")
 def home_page():
+    try:
+        t_format = "%Y-%m-%d %H:%M:%S%z"
+        dt_latest = datetime.datetime.strptime(Database.get_info_latest("audio")[0][2]+"+0000", t_format)
+    except:
+        logger.warning("時間の変換・取得に失敗")
+        try:
+            t_format = "%Y-%m-%d %H:%M:%S%z"
+            dt_latest = datetime.datetime.strptime(Database.get_info_latest("temp_audio")[0][2]+"+0000", t_format)
+        except:
+            logger.error("処理されていないセパレートファイルが見つかりませんでした")
+        else:
+            logger.info("セパレートファイルを確認、処理を継続します")       
+    
+    dt_now = datetime.datetime.now(datetime.timezone.utc)
+    try:
+        td = dt_now - dt_latest
+    except:
+        logger.error("時間の計算に失敗")
+    else:
+        print(td)
+        print(td.total_seconds())
+        if(td.total_seconds() > 300):
+            thread = threading.Thread(target=joint_threads)
+            thread.start()
+            logger.info("結合処理を開始します")
+        else:
+            logger.info("前回の結合から時間が空いていません")
+        
     html = render_template("index.html")
     return html
 
@@ -75,6 +114,13 @@ def  voice_data():
     latest_file = Database.get_info_row("audio", "id", "1")[0][2]
     
     return send_from_directory("audio", latest_file)
+
+@app.route("/history", methods=["POST"])
+def history():
+    fn = Database.get_info_row("audio", "id", "1")[0][2]
+    wordlist = Database.get_info_row("history", "filename", fn)
+    
+    return jsonify(wordlist)
 
 @app.route("/render_voice", methods=["POST"])  #追加
 def render():
@@ -104,11 +150,6 @@ def glue():
     
     JointWav.joint_audio(files, os.path.join(currentDir,"audio", filename))
     
-    #Tempファイルの中身を削除
-    if(os.path.isdir(os.path.join(currentDir, "temp", "audio"))):
-        shutil.rmtree(os.path.join(currentDir, "temp", "audio"))
-        os.mkdir(os.path.join(currentDir, "temp", "audio"))
-    
     return_data = {"fileUrl": os.path.join(currentDir, "audio", filename)}
     return jsonify(return_data)
 
@@ -117,8 +158,6 @@ def auto_onomatope():
     logger.info("== Activate onomatopoeia auto-generation mode ==")
     mode_data = request.get_json()
     count = mode_data["count"]
-    
-    Database.delete_table("temp_audio")
     
     for i in range(count):
         word = onomatope_list[random.randint(0, 276)][0]
