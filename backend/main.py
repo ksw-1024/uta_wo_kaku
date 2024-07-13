@@ -1,10 +1,8 @@
 import os
 import platform
-import time
 
 import json
 import datetime
-import shutil
 
 from flask import Flask, jsonify, request, render_template, send_from_directory, url_for
 from flask_cors import CORS
