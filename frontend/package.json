@@ -27,6 +27,8 @@
 		"framer-motion": "~11.1.1",
 		"intl-messageformat": "^10.5.0",
 		"konva": "^9.3.12",
+		"lucide": "^0.408.0",
+		"lucide-react": "^0.408.0",
 		"next": "14.2.4",
 		"next-themes": "^0.2.1",
 		"react": "18.3.1",
