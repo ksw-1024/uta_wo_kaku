@@ -32,6 +32,18 @@ def temp_data_push(separate_filename: str, filepath: str, word: str, onnso: int)
     conn.commit()
     
     conn.close()
+
+def history_data_push(filename: str, word: str):
+    conn = sqlite3.connect(os.path.join(currentDir, "SQLite3", "AUDIO_DATA.db"))
+    
+    cur = conn.cursor()
+    
+    cur.execute('CREATE TABLE IF NOT EXISTS temp_audio(id INTEGER PRIMARY KEY AUTOINCREMENT, time TIMESTAMP, filename STRING, word STRING)')
+    cur.execute('INSERT INTO temp_audio(time, filename, word) VALUES (CURRENT_TIMESTAMP, "{}", "{}", "{}", {})'.format(filename, word))
+    
+    conn.commit()
+    
+    conn.close()
     
 def delete_table(table_name: str):
     conn = sqlite3.connect(os.path.join(currentDir, "SQLite3","AUDIO_DATA.db"))

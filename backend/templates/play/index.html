@@ -46,8 +46,20 @@
         </section>
     </div>
 
-    <div class="grid grid-cols-12">
-
+    <div class="flex w-full h-full justify-center items-center">
+        <img class="mt-10" src="{{ url_for('static', filename='images/undefined - Imgur.gif' ) }}" />
+    </div>
+    <div class="w-full h-40 flex items-center justify-center">
+        <button id="start" type="button"
+            class="hover:bg-slate-100 text-black font-bold py-2 px-4 rounded-full text-center">
+            <i data-lucide="Play" class="my-class"></i>
+        </button>
+        <button id="stop" type="button"
+            class="hover:bg-slate-100 text-black font-bold py-2 px-4 rounded-full text-center">
+            <i data-lucide="Octagon-Pause" class="my-class"></i>
+        </button>
+        <!-- <button id="start" type="button" value="再生" class="col-2">再生</button>
+                <button id="stop" type="button" value="停止">停止</button> -->
     </div>
 
     <footer class="w-full text-gray-700 bg-white body-font absolute bottom-0" {!! $attributes ?? '' !!}>
@@ -114,39 +126,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"
     integrity="sha512-xi/RZRIF/S0hJ+yJJYuZ5yk6/8pCiRlEXZzoguSMl+vk2i3m6UjUO/WcZ11blRL/O+rnj94JRGwt/CHbc9+6EA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"
-    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-<script>
-    $("button#submit").click(function () {
-        var button = $(this);
-        button.attr("disabled", true);
-
-        var data = {
-            text: $("#word").val()
-        };
-
-        $.ajax({
-            type: "POST",
-            url: "http://127.0.0.1:8888/render_voice",
-            data: JSON.stringify(data),
-            contentType: 'application/json',
-            dataType: "json",
-            success: function (json_data) {
-                if (json_data["fileUrl"] == "TOO MANY LETTERS") {
-                    alert("文字数が多すぎます。8発音までにおさめてください。");
-                    return;
-                } else {
-                    alert("送信しました。");
-                }
-            },
-            error: function () {
-                alert("送信に失敗しました。");
-            },
-            complete: function () {
-                button.attr("disabled", false);
-            }
-        });
-    });
-</script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/bpm.js') }}"></script>
 
 </html>

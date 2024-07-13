@@ -63,6 +63,7 @@ def joint_audio(inputs, output):
         fn = os.path.basename(i[0])
         word = DB.get_info_row("temp_audio", "filename", fn)[0][4]
         DB.data_push(os.path.basename(output), fn, word)
+        DB.history_data_push(os.path.basename(output), word)
     
     #Sepatateファイルの中身を削除
     if(os.path.isdir(os.path.join(currentDir, "audio", "separates"))):
