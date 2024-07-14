@@ -21,6 +21,6 @@ requests==2.32.3
 soupsieve==2.5
 typing_extensions==4.12.2
 urllib3==2.2.2
-Werkzeug==3.0.3
+voicevox_core @ https://github.com/VOICEVOX/voicevox_core/releases/download/0.15.0/voicevox_core-0.15.0+cpu-cp38-abi3-linux_x86_64.whl
 wrapt==1.16.0
 yakinori==0.1.2
