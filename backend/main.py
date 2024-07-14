@@ -24,8 +24,6 @@ currentDir = os.path.dirname(os.path.abspath(__file__))
 #プラットフォームの情報取得
 platform_info = "NoData"
 
-print(VoicevoxConnecter.test())
-
 pf = platform.system()
 if pf == "Windows":
     platform_info = "Windows"
@@ -57,6 +55,7 @@ def joint_threads():
     filename = dt_now + ".wav"
     
     JointWav.joint_audio(files, os.path.join(currentDir,"audio", filename))
+    logger.info("結合処理が完了しました")
                 
 @app.route("/")
 def home_page():
@@ -67,7 +66,7 @@ def home_page():
         logger.warning("時間の変換・取得に失敗")
         try:
             t_format = "%Y-%m-%d %H:%M:%S%z"
-            dt_latest = datetime.datetime.strptime(Database.get_info_latest("temp_audio")[0][2]+"+0000", t_format)
+            dt_latest = datetime.datetime.strptime(Database.get_info_row("temp_audio", "id", "1")[0][1]+"+0000", t_format)
         except:
             logger.error("処理されていないセパレートファイルが見つかりませんでした")
         else:
@@ -79,8 +78,6 @@ def home_page():
     except:
         logger.error("時間の計算に失敗")
     else:
-        print(td)
-        print(td.total_seconds())
         if(td.total_seconds() > 300):
             thread = threading.Thread(target=joint_threads)
             thread.start()
