@@ -3,8 +3,6 @@ import random, string
 
 import sqlite3
 
-import datetime
-
 currentDir = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), os.pardir))
 conn = sqlite3.connect(os.path.join(currentDir, "SQLite3","AUDIO_DATA.db"))
 

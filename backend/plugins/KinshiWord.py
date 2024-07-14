@@ -2,7 +2,6 @@ import os
 import xml.etree.ElementTree as ET
 
 from plugins.Wakachigaki import to_kana
-#from Wakachigaki import to_kana
 
 currentDir = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), os.pardir))
 
