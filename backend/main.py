@@ -17,11 +17,14 @@ import threading
 #自分の関数読み出し
 
 from plugins import VoiceGenerater, Wakachigaki, JointWav, Database, KinshiWord
+from plugins import VoicevoxConnecter
 
 currentDir = os.path.dirname(os.path.abspath(__file__))
 
 #プラットフォームの情報取得
 platform_info = "NoData"
+
+print(VoicevoxConnecter.test())
 
 pf = platform.system()
 if pf == "Windows":
