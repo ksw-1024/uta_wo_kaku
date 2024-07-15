@@ -109,7 +109,7 @@ def play_bgm():
 
 @server.route("/audio/voice.wav")
 def  voice_data():
-    latest_file = Database.get_info_row("audio", "id", "1")[0][2]
+    latest_file = Database.get_info_latest("audio")[0][3]
     
     return send_from_directory("audio", latest_file)
 
