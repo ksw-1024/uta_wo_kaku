@@ -1,4 +1,5 @@
 import os
+import shutil
 
 from pydub import AudioSegment
 
@@ -63,3 +64,9 @@ def joint_audio(inputs, output):
         word = DB.get_info_row("temp_audio", "filename", fn)[0][4]
         DB.data_push(os.path.basename(output), fn, word)
         DB.history_data_push(os.path.basename(output), word)
+        
+    #temp_audioを削除
+    shutil.rmtree(os.path.join(currentDir, "app", "audio", "separates"))
+    os.mkdir(os.path.join(currentDir, "app", "audio", "separates"))
+    
+    DB.delete_table("temp_audio")
